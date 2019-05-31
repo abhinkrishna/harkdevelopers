@@ -1,0 +1,389 @@
+<html>
+<head>
+    <title> KTU Credit Calculator </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Abhin Krishna">
+    <meta name="description" content="KTU Credit Calculator is a simple tool that helps students under APJ Abdul Kalam Technological University (KTU) to find their credit score from semester 1 to semester 4">
+    <meta name="keywords" content="Kerala Technology University, Kerala Technological University, HARK Developers , KTU Credit Calculator , Credit , Calculate ,Kerala Technical University, ktu.edu.in, ktu, Kerala University , Harkians">
+    <link rel="icon" type="image/ico" href="../../images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/css/customStyles.css">
+    <!-- jQuery -->
+    <script src="../../scripts/jquery.min.js" charset="utf-8"></script>
+    <script src="scripts/creditCalc.js"> </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway');
+  </style>
+</head>
+<body>
+<div id="header">
+    <div class="logo">
+        <a href="https://www.harkdevelopers.com">
+            <div class="logo-img"> </div>
+            <div class="logo-txt"> hark </div>
+        </a>
+    </div>
+</div>
+<div id="content">
+    <div class="JavaError">
+      <div class="javaErr">  Something gone wrong, Please make sure JavaScript is enabled on your browser  </div>
+    </div>
+    <div class="showContent" hidden>
+      <div class="contentSelector">
+        <table border="0px">
+            <tr>
+                <td width="80%">
+                    <select id="course">
+                        <option value="select" selected> Select a Course</option>
+                        <option value="cse"> Computer Science And Engineering (CSE) </option>
+                        <option value="me"> Mechanical Engineering (ME) </option>
+                        <option value="ece"> Electronics and Communication Engineering (ECE) </option>
+                        <option value="eee"> Electrical and Electronics Engineering (EEE) </option>
+                        <option value="ce"> Civil Engineering (CE) </option>
+                        <option value="bt"> Bio-Technology (BT) </option>
+                        <option value="othr"> Other </option>
+                    </select>
+                </td>
+                <td> <button id="show"> Show </button> </td>
+            </tr>
+        </table>
+    </div>
+      <div class="instructionsBox" hidden>
+        <button id="instctCloseBtn"> <i class="fas fa-window-close fa-lg" title="Close"></i> </button>
+        <p> <i class="far fa-lightbulb"></i> How to Use?  </p>
+        <ul>
+            <li> Select a Course from above and click/tap 'Show' button. </li>
+            <li> Tick the subjects you have passed and leave failed subjects unticked.  </li>
+            <li> Give proper number of labs in each semester, you are entering the total credit you got from all the Labs/Workshops in that semester </li>
+            <li> After entering all fields Click/Tap 'Calculate' button to display your credit score  </li>
+        </ul>
+    </div>
+      <div class="dispmsg">
+        <span class="ft12">Welcome to KTU Credit Calculator</span> <br>
+        Please select a course to continue <br>
+        <span class="ft13 text-888"> Made with <i class="fas fa-mug-hot"></i> by Abhin Krishna</span>
+      </div>
+      <div class="contentBox" hidden>
+          <!-- Table 1 Starts -->
+          <table border="0px">
+              <tr>
+                  <th colspan="3"> <h3> S1 </h3> </th>
+              </tr>
+              <tr>
+                  <td>
+                      <table border="2px" rules="all">
+                          <tr>
+                              <td id="SlNo"> <b>Sl No</b> </td>
+                              <td id="Subject"> <b>Subject</b> </td>
+                              <td id="Credit"> <b>Credit</b> </td>
+                              <td id="Passed"> <b>Passed</b> </td>
+                          </tr>
+                          <tr>
+                              <td> 1 </td>
+                              <td style="text-align:left"> <div id="S1A_Name"> </div> </td>
+                              <td> <div id="S1A_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S1A"> </td>
+                          </tr>
+                          <tr>
+                              <td> 2 </td>
+                              <td style="text-align:left"> <div id="S1B_Name"> </div> </td>
+                              <td> <div id="S1B_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S1B"> </td>
+                          </tr>
+                          <tr>
+                              <td> 3 </td>
+                              <td style="text-align:left">   <div id="S1C_Name"> </div> </td>
+                              <td> <div id="S1C_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S1C"> </td>
+                          </tr>
+                          <tr>
+                              <td> 4 </td>
+                              <td style="text-align:left"> <div id="S1D_Name"> </div> </td>
+                              <td> <div id="S1D_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S1D"> </td>
+                          </tr>
+                          <tr>
+                              <td> 5 </td>
+                              <td style="text-align:left"> <div id="S1E_Name"> </div> </td>
+                              <td> <div id="S1E_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S1E"> </td>
+                          </tr>
+                          <tr>
+                              <td> 6 </td>
+                              <td style="text-align:left"> <div id="S1F_Name"> </div> </td>
+                              <td> <div id="S1F_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S1F"> </td>
+                          </tr>
+                          <tr>
+                              <td> 7 </td>
+                              <td style="text-align:left"> Labs + Workshops  (Mostly 3 in S1) </td>
+                              <td> <div id="S1selct"> 1 </div> </td>
+                              <td> <select id="s1labcrdt"> <option value="0" selected> 0 </option> <option value="1"> 1 </option> <option value="2"> 2 </option> <option value="3"> 3 </option> <option value="4"> 4 </option> </select> </td>
+                          </tr>
+                          <tr>
+                              <td> </td>
+                              <td style="text-align:left;"> Total Credits from S1  </td>
+                              <td> <div id="AccmltdMaxS1">  </div> </td>
+                              <td> <div id="AccmltdS1">  </div> </td>
+                          </tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+          <!-- Table 2 Starts -->
+          <table border="0px">
+              <tr>
+                  <th colspan="3"> <h3> S2 </h3> </th>
+              </tr>
+              <tr>
+                  <td>
+                      <table border="2px" rules="all">
+                          <tr>
+                              <td id="SlNo"> <b>Sl No</b> </td>
+                              <td id="Subject"> <b>Subject</b> </td>
+                              <td id="Credit"> <b>Credit</b> </td>
+                              <td id="Passed"> <b>Passed</b> </td>
+                          </tr>
+                          <tr>
+                              <td> 1 </td>
+                              <td style="text-align:left"> <div id="S2A_Name"> </div> </td>
+                              <td> <div id="S2A_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S2A"> </td>
+                          </tr>
+                          <tr>
+                              <td> 2 </td>
+                              <td style="text-align:left"> <div id="S2B_Name"> </div> </td>
+                              <td> <div id="S2B_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S2B"> </td>
+                          </tr>
+                          <tr>
+                              <td> 3 </td>
+                              <td style="text-align:left"> <div id="S2C_Name"> </div>  </td>
+                              <td> <div id="S2C_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S2C"> </td>
+                          </tr>
+                          <tr>
+                              <td> 4 </td>
+                              <td style="text-align:left">  <div id="S2D_Name"> </div> </td>
+                              <td> <div id="S2D_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S2D"> </td>
+                          </tr>
+                          <tr>
+                              <td> 5 </td>
+                              <td style="text-align:left"> <div id="S2E_Name"> </div> </td>
+                              <td> <div id="S2E_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S2E"> </td>
+                          </tr>
+                          <tr>
+                              <td> 6 </td>
+                              <td style="text-align:left"> <div id="S2F_Name"> </div> </td>
+                              <td> <div id="S2F_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S2F"> </td>
+                          </tr>
+                          <tr>
+                              <td> 7 </td>
+                              <td style="text-align:left"> Labs + Workshops (Mostly 3 in S2)  </td>
+                              <td> 1  </td>
+                              <td> <select id="s2labcrdt"> <option value="0" selected> 0 </option>  <option value="1"> 1 </option> <option value="2"> 2 </option> <option value="3"> 3 </option> <option value="4"> 4 </option> </select> </td>
+                          </tr>
+                          <tr>
+                              <td> <div> </div> </td>
+                              <td style="text-align:left"> Total Credits in S2 Only </td>
+                              <td> <div id="S2MaxCredit"> </div> </td>
+                              <td> <div id="s2Total">  </div> </td>
+                          </tr>
+                          <tr>
+                              <td> </td>
+                              <td style="text-align:left;"> Total Credits from S1-S2  </td>
+                              <td> <div id="AccmltdMaxS2">  </div> </td>
+                              <td> <div id="AccmltdS2">  </div> </td>
+                          </tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+          <!-- Table 3 Starts -->
+          <table border="0px">
+              <tr>
+                  <th colspan="3"> <h3> S3 </h3> </th>
+              </tr>
+              <tr>
+                  <td>
+                      <table border="2px" rules="all">
+                          <tr>
+                              <td id="SlNo"> <b>Sl No</b> </td>
+                              <td id="Subject"> <b>Subject</b> </td>
+                              <td id="Credit"> <b>Credit</b> </td>
+                              <td id="Passed"> <b>Passed</b> </td>
+                          </tr>
+                          <tr>
+                              <td> 1 </td>
+                              <td style="text-align:left"> <div id="S3A_Name"> </div> </td>
+                              <td> <div id="S3A_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S3A"> </td>
+                          </tr>
+                          <tr>
+                              <td> 2 </td>
+                              <td style="text-align:left"> <div id="S3B_Name"> </div> </td>
+                              <td> <div id="S3B_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S3B"> </td>
+                          </tr>
+                          <tr>
+                              <td> 3 </td>
+                              <td style="text-align:left"> <div id="S3C_Name"> </div> </td>
+                              <td> <div id="S3C_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S3C"> </td>
+                          </tr>
+                          <tr>
+                              <td> 4 </td>
+                              <td style="text-align:left">  <div id="S3D_Name"> </div>  </td>
+                              <td> <div id="S3D_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S3D"> </td>
+                          </tr>
+                          <tr>
+                              <td> 5 </td>
+                              <td style="text-align:left"> <div id="S3E_Name"> </div> </td>
+                              <td> <div id="S3E_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S3E"> </td>
+                          </tr>
+                          <tr>
+                              <td> 6 </td>
+                              <td style="text-align:left"> <div id="S3F_Name"> </td>
+                              <td> <div id="S3F_Credit"> </td>
+                              <td> <input type="checkbox" id="S3F"> </td>
+                          </tr>
+                          <tr>
+                              <td> 7 </td>
+                              <td style="text-align:left">  Labs + Workshops (Mostly 2 in S3)  </td>
+                              <td> 1 </td>
+                              <td> <select id="s3labcrdt"> <option value="0" selected> 0 </option>  <option value="1"> 1 </option> <option value="2"> 2 </option> <option value="3"> 3 </option> <option value="4"> 4 </option> </select> </td>
+                          </tr>
+                          <tr>
+                              <td> </td>
+                              <td style="text-align:left"> Total Credits in S3 Only </td>
+                              <td> <div id="S3MaxCredit"> </div> </td>
+                              <td> <div id="s3Total">  </div> </td>
+                          </tr>
+                          <tr>
+                              <td> </td>
+                              <td style="text-align:left;"> Total Credits from S1-S3  </td>
+                              <td> <div id="AccmltdMaxS3">  </div> </td>
+                              <td> <div id="AccmltdS3">  </div> </td>
+                          </tr>
+
+                      </table>
+                  </td>
+              </tr>
+          </table>
+          <!-- Table 4 Starts -->
+          <table border="0px">
+              <tr>
+                  <th colspan="3"> <h3> S4 </h3> </th>
+              </tr>
+              <tr>
+                  <td>
+                      <table border="2px" rules="all">
+                          <tr>
+                              <td id="SlNo"> <b>Sl No</b> </td>
+                              <td id="Subject"> <b>Subject</b> </td>
+                              <td id="Credit"> <b>Credit</b> </td>
+                              <td id="Passed"> <b>Passed</b> </td>
+                          </tr>
+                          <tr>
+                              <td> 1 </td>
+                              <td style="text-align:left">  <div id="S4A_Name"> </div> </td>
+                              <td> <div id="S4A_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S4A"> </td>
+                          </tr>
+                          <tr>
+                              <td> 2 </td>
+                              <td style="text-align:left">   <div id="S4B_Name"> </div>  </td>
+                              <td> <div id="S4B_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S4B"> </td>
+                          </tr>
+                          <tr>
+                              <td> 3 </td>
+                              <td style="text-align:left">    <div id="S4C_Name"> </div> </td>
+                              <td> <div id="S4C_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S4C"> </td>
+                          </tr>
+                          <tr>
+                              <td> 4 </td>
+                              <td style="text-align:left">   <div id="S4D_Name"> </div> </td>
+                              <td> <div id="S4D_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S4D"> </td>
+                          </tr>
+                          <tr>
+                              <td> 5 </td>
+                              <td style="text-align:left"> <div id="S4E_Name"> </div> </td>
+                              <td> <div id="S4E_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S4E"> </td>
+                          </tr>
+                          <tr>
+                              <td> 6 </td>
+                              <td style="text-align:left"> <div id="S4F_Name"> </div> </td>
+                              <td> <div id="S4F_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S4F"> </td>
+                          </tr>
+                          <tr>
+                              <td> 7 </td>
+                              <td style="text-align:left"> Labs + Workshops (Mostly 2 in S4) </td>
+                              <td> <div id="S4A_Credit"> 1 </div></td>
+                              <td> <select id="s4labcrdt"> <option value="0" selected> 0 </option> <option value="1"> 1 </option> <option value="2"> 2 </option> <option value="3"> 3 </option> <option value="4"> 4 </option> </select> </td>
+                          </tr>
+                          <tr>
+                              <td> </td>
+                              <td style="text-align:left"> Total Credits in S4 Only</td>
+                              <td> <div id="S4MaxCredit"> </div> </td>
+                              <td> <div id="s4Total">  </div> </td>
+                          </tr>
+                          <tr>
+                              <td> </td>
+                              <td style="text-align:left;"> Total Credits from S1-S4  </td>
+                              <td> <div id="AccmltdMaxS4">  </div> </td>
+                              <td> <div id="AccmltdS4">  </div> </td>
+                          </tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+          <div class="CalcButton"> <button id="CalcBtn"> Calculate </button> </div>
+          <div class="errorMsg" hidden> Please give input </div>
+        </div>
+            <div class="resultBox" hidden>
+        <table border="0px">
+            <tr id="S1S2Result">
+                <td width="60%" style="text-align:right;"> Your Total Credits from S1 - S2 </td>
+                <td width="3%" style="text-align:center;"> : </td>
+                <td width="37%"  style="font-size:60;"> <div id="s1s2" class="green">  </div> </td>
+            </tr>
+            <tr id="S1S4Result">
+                <td style="text-align:right;"> Your Total Credits from S1 - S4 </td>
+                <td style="text-align:center;"> : </td>
+                <td style="font-size:60;"> <div id="s1s4" class="green">  </div> </td>
+            </tr>
+        </table>
+        <div id="ResultReview"> </div>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <div class="container">
+            <div class="row">
+              <div class="halfWindow">
+                <p class="text-666 ft13 w100 footerText"><i class="far fa-copyright"></i> All copyrights reserved</p>
+              </div>
+              <div class="halfWindow text-777 ft13 footerDevelopedBy">
+                Developed by HARK <br>
+                <span class="ft10 text-555">Made with <i class="fas fa-heart"></i> in Cranganore, KL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+</body>
+</html>

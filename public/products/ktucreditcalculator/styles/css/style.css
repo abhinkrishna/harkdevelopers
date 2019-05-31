@@ -1,0 +1,283 @@
+:root {
+    --main-color:#ccc;
+    --accnt-color:#2e86c1;
+    --hover-color1:red;
+}
+@font-face {
+    font-family:hark-myriad;
+    src: url(fonts/MyriadPro-Regular.otf);
+}
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: hark-myriad;
+}
+a {text-decoration: none;color: var(--accnt-color)}
+body {
+  background: #fff;
+  color: #444;
+}
+hr {color: #efefef;}
+h1 {
+  margin: 5px 0px 5px 20px;
+  padding: 0px;
+  width: 100%;
+  color: var(--accnt-color);
+  font-size: 22px;
+}
+h3 {
+  margin: 5px 0px 5px 0px;
+  color: #444;
+}
+h4 {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+button {
+  margin: 0px;
+  padding: 0px;
+}
+#header {
+  width: 100%;
+  height: 50px;
+  float: left;
+  background: #242424;
+  position: fixed;
+  box-shadow: 0px 0px 10px  #444;
+}
+.logo a {
+  float: left;
+  width: 110px;
+  height: 50px;
+  margin-left: 5%;
+}
+.logo-img {
+  float: left;
+  margin-top: 7px;
+  width: 30px;
+  height: 30px;
+  background-image: url(images/logoWhite.svg);
+  background-repeat: no-repeat;
+  -webkit-transition:1.0s;
+  -moz-transition:1.0s;
+}
+.logo-txt{
+  font-variant: small-caps;
+  font-size: 35px;
+  line-height: 50px;
+  color: #fff;
+}
+
+#content {
+  margin-top:50px;
+  margin-bottom: 50px;
+  float: left;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.contentSelector {
+  width: 60%;
+  height: 50px;
+  margin: 0px auto;
+  margin-top: 20px;
+  background: #242424;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 7px;
+}
+.contentSelector table {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  color: #fff;
+}
+.contentSelector button {
+  width: 100%;
+  height: 100%;
+  background: var(--accnt-color);
+  color: #fff;
+  border: 0px;
+}
+.contentBox button {
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 5px;
+  height: 50px;
+  background: var(--accnt-color);
+  color: #fff;
+  border: 0px;
+}
+input {
+  border: 0px;
+  padding: 10px;
+}
+select {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  border: 0px;
+  padding: 10px;
+}
+.contentBox {
+  width: 60%;
+  margin: 0px auto;
+  background: #fff;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 7px #444;
+}
+.contentBox table {
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+.contentBox table #SlNo {width: 7%;}
+.contentBox table #Subject {width: 63%;}
+.contentBox table #Credit {width: 15%;}
+.contentBox table #Passed {width: 15%;}
+.contentBox table th {
+  text-align: left;
+  font-size: 20px;
+}
+.contentBox table tr td{
+  text-align: center;
+}
+.instructionsBox {
+  width: 60%;
+  margin: 0px auto;
+  /* background: #d9ed1e; */
+  background: #dfe6e9;
+  color:#242424;
+  margin-top: 10px;
+  padding: 2px 15px 2px 15px;
+  border-radius: 7px;
+  #box-shadow: 0px 0px 3px #aaa;
+  font-size: 14px;
+}
+.instructionsBox p {
+  margin-left: 5%;
+  font-size: 15px;
+}
+
+#instctCloseBtn {
+  float: right;
+  position: relative;
+  margin-top: 5px;
+  margin-right: 10px;
+  background: none;
+  color: #333;
+  border:0px;
+}
+.CalcButton {
+  width: 100%;
+  height: 50px;
+}
+.resultBox {
+  width: 60%;
+  min-height: 200px;
+  margin: 0px auto;
+  background: #fff;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 7px #444;
+}
+.resultBox table {
+  width: 100%;
+  height: 200px;
+}
+.resultBox table tr td {
+  font-size: 25px;
+}
+#ResultReview {
+  width: 100%;
+  padding: 7px 0px 7px 0px;
+  text-align: center;
+}
+.red {color:red;}
+.green {color:green;}
+.dispmsg, .javaErr {
+  margin: 0px;
+  margin-top: 100px;
+  width: 100%;
+  height: 20vw;
+  color: #999;
+  text-align: center;
+  font-size: 13px;
+}
+.errorMsg {
+  padding: 0px;
+  margin: 0px auto;
+  width: 99.9%;
+  text-align: center;
+  color: #fd3f55;
+  margin-top: 7px;
+  padding: 7px 0px 7px 0px;
+  border: 1px solid #fd3f55;
+  background: #fecdd2;
+}
+#ResultReview {
+  margin: 0px  auto;
+  font-family: hark-nexa;
+  font-size: 14px;
+  width: 90%;
+  padding: 10px;
+  /* background: var(--accnt-color); */
+  /* background: #C203AB; */
+  color: #444;
+  border-radius: 7px;
+}
+#ResultReview {
+  font-family: hark-myriad;
+}
+#footer {
+  float: left;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #242424;
+  color: #eee;
+  font-family: Raleway;
+}
+.footerDevelopedBy {
+  text-align: right;
+}
+.container {
+  width: 80%;
+  margin: 0px auto;
+}
+.halfWindow {
+  float: left;
+  width: 50%;
+}
+@media screen and (max-width: 600px){
+  #header {box-shadow: 0px 0px 0px  #444;}
+  .logo-txt {font-size: 30px;margin-left:10px;}
+  .contentSelector {width: 100%;margin-top: 0px;border-radius: 0px;padding: 0px;margin: 0px}
+  .contentBox {width: 100%;padding: 0px;margin: 0px;margin-top: 30px;border-radius: 0px;box-shadow:0px 0px 0px}
+  .contentBox table {width: 95%;margin: 0px auto;margin-bottom: 10px;}
+  .instructionsBox {width: 100%;margin: 0px;padding:5px 0px 5px 0px;border-radius: 0px;}
+  .instructionsBox ul {margin-right:5px;}
+  .instructionsBox li {margin-left: -15px}
+  .CalcButton {width: 88%;margin: 0px auto;}
+  .errorMsg {width: 87%;margin: 0px auto;margin-top: 6px;}
+  .resultBox {width: 85%;margin-top: 30px;}
+  .resultBox table tr td {font-size: 19px;}
+  .contentBox table #SlNo {width: 10%;}
+  .contentBox table #Subject {width: 60%;}
+  .contentBox table #Credit {width: 10%;}
+  .contentBox table #Passed {width: 20%;}
+  #ResultReview {width: 100%;padding: 10px 0px 10px 0px;}
+  #content {margin-top: 50px;}
+  h1{margin: 5px 0px 5px 0px;}
+  h3{margin: 0px;}
+  h4{margin: 0px;}
+  .footerText {display: none;}
+  .halfWindow {width: 100%;}
+  .footerDevelopedBy {text-align: center;}
+}

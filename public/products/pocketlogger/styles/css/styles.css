@@ -1,0 +1,7 @@
+.demo-card-square.mdl-card {
+  width: 100%;
+  height: 30%;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+}

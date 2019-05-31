@@ -1,0 +1,404 @@
+body , html {
+  margin: 0px;
+  padding: 0px;
+  font-family: Raleway;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background: trasnsparent;
+}
+::-webkit-scrollbar-track {
+  background: #242424;
+}
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #eee;
+}
+.snapWindows {
+  /* scroll-snap-type: y mandatory; */
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 100vh;
+  /* position: relative; */
+}
+.topButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 50px;
+  position: fixed;
+  color:#000;
+  background: #fff;
+  text-align: center;
+  line-height: 50px;
+}
+.topButton a {
+  font-size: 20px;
+}
+.window {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.windowTitle {
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+}
+.window:nth-child(1) {background: #fff;}
+.window:nth-child(2) {background: #3B3B98;}
+.window:nth-child(3) {background: #f5f6fa;}
+.window:nth-child(4) {background: #7ed6df;}
+.window:nth-child(5) {background: #fff;}
+.window:nth-child(6) {background: #6F1E51;}
+.window:nth-child(7) {min-height: 200px;background: #242424;}
+.items {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: block;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+}
+.items a {
+  color: #fff;
+}
+.vNav {
+  width:10%;
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+  background: #242424;
+  color: #fff;
+}
+.nav {
+  width: 100%;
+  height: 20vh;
+  background: #242424;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5a5a5a;
+  font-size: 23px;
+  -webkit-transition:0.25s;
+  -moz-transition:0.25s;
+}
+.nav:hover {
+  background: #141414;
+}
+.interestsIcon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin: auto;
+}
+.webDevIcon {
+  width: 90%;
+  height: 90%;
+  background: url(../../images/svg/web.svg);
+  background-position: center;
+  background-size: contain;
+}
+.prototypeDevIcon {
+  width: 70%;
+  height: 70%;
+  background: url(../../images/svg/prototype.svg);
+  background-position: center;
+  background-size: contain;
+}
+.pythonDevIcon {
+  width: 70%;
+  height: 70%;
+  background: url(../../images/svg/python.svg);
+  background-position: center;
+  background-size: contain;
+}
+
+.centerContent {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  position: relative;
+}
+
+.techIcons {
+  width: 200px;
+  height: 200px;
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.techIconsHover {
+-webkit-transition:0.5s;
+-moz-transition:0.5s;
+}
+.techIcons:hover .techIconsHover {
+  transform: scale(1.4);
+}
+.angularIcon {
+  width: 45%;
+  height: 45%;
+  background: url(../../images/svg/technologies/angular.svg);
+  background-position: center;
+  background-size: contain;
+}
+.html5Icon {
+  width: 50%;
+  height: 50%;
+  background: url(../../images/svg/technologies/html5.svg);
+  background-position: center;
+  background-size: contain;
+}
+.css3Icon {
+  width: 50%;
+  height: 50%;
+  background: url(../../images/svg/technologies/css3.svg);
+  background-position: center;
+  background-size: contain;
+}
+.jsIcon {
+  width: 50%;
+  height: 50%;
+  background: url(../../images/svg/technologies/js.svg);
+  background-position: center;
+  background-size: contain;
+}
+.jqueryIcon {
+  width: 45%;
+  height: 45%;
+  background: url(../../images/svg/technologies/jquery.svg);
+  background-position: center;
+  background-size: contain;
+}
+.nodejsIcon {
+  width: 50%;
+  height: 50%;
+  background: url(../../images/svg/technologies/nodejs.svg);
+  background-position: center;
+  background-size: contain;
+}
+.arduinoIcon {
+  width: 45%;
+  height: 45%;
+  background: url(../../images/svg/technologies/arduino.svg);
+  background-position: center;
+  background-size: contain;
+}
+.raspIcon {
+  width: 45%;
+  height: 45%;
+  background: url(../../images/svg/technologies/rasp.svg);
+  background-position: center;
+  background-size: contain;
+}
+.reactIcon {
+  width: 45%;
+  height: 45%;
+  background: url(../../images/svg/technologies/react.svg);
+  background-position: center;
+  background-size: contain;
+}
+.pythonIcon {
+  width: 45%;
+  height: 45%;
+  background: url(../../images/svg/technologies/python.svg);
+  background-position: center;
+  background-size: contain;
+}
+.firebaseIcon {
+  width: 60%;
+  height: 60%;
+  background: url(../../images/svg/technologies/firebase.svg);
+  background-position: center;
+  background-size: contain;
+}
+.tensorflowIcon {
+  width: 45%;
+  height: 45%;
+  background: url(../../images/svg/technologies/tensorflow.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sassIcon {
+  width: 45%;
+  height: 45%;
+  background: url(../../images/svg/technologies/sass.svg);
+  background-position: center;
+  background-size: contain;
+}
+.javaIcon {
+  width: 50%;
+  height: 50%;
+  background: url(../../images/svg/technologies/java.svg);
+  background-position: center;
+  background-size: contain;
+}
+.bootstrapIcon {
+  width: 50%;
+  height: 50%;
+  background: url(../../images/svg/technologies/bootstrap.svg);
+  background-position: center;
+  background-size: contain;
+}
+.dispworks {
+  width: 500px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 5px;
+  position: relative;
+  background: #fff;
+}
+.imgOverlay {
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  /* background-color: #22a6b3; */
+  background-color: #2d98da;
+  color: #fff;
+}
+.dispworks:hover .imgOverlay {
+  opacity: 1;
+}
+.fa-external-link-alt {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.text {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text a {
+  color: #fff;
+}
+.subtext {
+  width: 100%;
+  opacity: 0.5;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+.subIcons {
+  margin-top: 5px;
+}
+.rudra19 {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(../../images/works/rudra19.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+.projectrobo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(../../images/works/projectrobo.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+.tictactoe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(../../images/works/tictactoe.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+.creditCalc {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(../../images/works/creditCalc.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+.project3d {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(../../images/works/project3d.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+.memberIcon {
+  width: 100px;
+  height: 100px;
+  /* background: #aaa; */
+  background: url(../../images/svg/avatar.svg);
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition:0.25s;
+  -moz-transition:0.25s;
+
+}
+.memberIcon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.hoverBackgound:hover .memberIcon {
+  transform: scale(1.2);
+}
+
+.formStyles input[type=email],.formStyles input[type=name],.formStyles input[type=phone],.formStyles input[type=text],.formStyles textarea{
+  width: 100%;
+  padding: 14px;
+  margin: 5px;
+  border: 0px;
+  border-radius: 5px;
+  background: #fff;
+  color: #242424;
+}
+.formStyles textarea {
+  height: 200px;
+}
+.invalid {
+  border: 2px solid #c0392b;
+}
+.hide {
+  display: none;
+}
+.send {
+  padding: 10px 20px 10px 20px;
+  margin: 5px;
+  border: 0px;
+  border-radius: 5px;
+  background: #B53471;
+  color: #fff;
+}
+.footerDevelopedBy {
+  text-align: right;
+}

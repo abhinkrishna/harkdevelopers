@@ -1,0 +1,69 @@
+@media only screen and (max-width: 600px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  .snapWindows {
+    scroll-snap-type: unset;
+    /* scroll-snap-type: y proximity; */
+  }
+  .windowTitle {
+    margin-top: 50px;
+    font-size: 10vw;
+  }
+  .vNav{
+    width: 100%;
+    height: 20%;
+    bottom: 0px;
+  }
+  .nav {
+    width: 20%;
+    height: 100%;
+    float: left;
+  }
+  .topButton {
+    right: 10px;
+    bottom: 10px;
+    background: #242424;
+    color: #fff;
+  }
+  .techIcons {
+    width: 100px;
+    height: 100px;
+  }
+  .jqueryIcon,.arduinoIcon,.raspIcon,.reactIcon,.pythonIcon,.tensorflowIcon,.sassIcon,.javaIcon,.bootstrapIcon {
+    width: 50%;
+    height: 50%;
+  }
+  .html5Icon,.css3Icon,.jsIcon,.firebaseIcon,.nodejsIcon {
+    width: 60%;
+    height: 60%;
+  }
+  .dispworks {
+    width: 350px;
+    height: 175px;
+  }
+  .memberIcon {
+    width: 150px;
+    height: 150px;
+  }
+  .card-title {
+    text-align: center;
+  }
+  .card-text {
+    text-align: center;
+    font-size: 3.5vw;
+  }
+  .formStyles {
+    padding-bottom: 30px;
+  }
+  .footerText {
+    display: none;
+
+  }
+  .footerDevelopedBy {
+    text-align: center;
+  }
+  .projectTitle {
+    font-size: 14vw;
+  }
+}
