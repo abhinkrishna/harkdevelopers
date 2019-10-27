@@ -270,7 +270,7 @@ select {
   .instructionsBox li {margin-left: -15px}
   .CalcButton {width: 88%;margin: 0px auto;}
   .errorMsg {width: 87%;margin: 0px auto;margin-top: 6px;}
-  .resultBox {width: 85%;margin-top: 30px;}
+  .resultBox {width: 87%;margin-top: 30px;}
   .resultBox table tr td {font-size: 19px;}
   .contentBox table #SlNo {width: 10%;}
   .contentBox table #Subject {width: 60%;}
@@ -278,6 +278,7 @@ select {
   .contentBox table #Passed {width: 20%;}
   #ResultReview {width: 100%;padding: 10px 0px 10px 0px;}
   #content {margin-top: 50px;}
+  .AnalysisTable{font-size: 3vw;}
   h1{margin: 5px 0px 5px 0px;}
   h3{margin: 0px;}
   h4{margin: 0px;}

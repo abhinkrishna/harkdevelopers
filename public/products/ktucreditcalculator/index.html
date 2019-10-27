@@ -66,14 +66,15 @@
       <div class="dispmsg">
         <span class="ft12">Welcome to KTU Credit Calculator</span> <br>
         Please select a course to continue <br>
-        <span class="ft13 text-888"> Made with <i class="fas fa-mug-hot"></i> by Abhin Krishna</span>
+        <span class="ft13 text-888"> Made with <i class="fas fa-mug-hot"></i> by Abhin Krishna </span> <br>
+        <span style="font-size:10px;">2.2v</span>
       </div>
       <div class="contentBox" hidden>
           <!-- Table 1 Starts -->
           <table border="0px">
               <tr>
                   <th width="20px"> <h3> S1 </h3> </th>
-                  <td><span class="fullpasscheck"> Check all <input type="checkbox" id="S1FullPass"> </span></td>
+                  <td><span class="fullpasscheck"> Check All <input type="checkbox" id="S1FullPass"> </span></td>
               </tr>
               <tr>
                   <td colspan="2">
@@ -140,7 +141,7 @@
           <table border="0px">
               <tr>
                   <th width="20px"> <h3> S2 </h3> </th>
-                  <td><span class="fullpasscheck"> Check all <input type="checkbox" id="S2FullPass"> </span></td>
+                  <td><span class="fullpasscheck"> Check All <input type="checkbox" id="S2FullPass"> </span></td>
               </tr>
               <tr>
                   <td colspan="2">
@@ -213,7 +214,7 @@
           <table border="0px">
               <tr>
                   <th width="20px"> <h3> S3 </h3> </th>
-                  <td><span class="fullpasscheck"> Check all <input type="checkbox" id="S3FullPass"> </span></td>
+                  <td><span class="fullpasscheck"> Check All <input type="checkbox" id="S3FullPass"> </span></td>
               </tr>
               <tr>
                   <td colspan="2">
@@ -287,7 +288,7 @@
           <table border="0px">
               <tr>
                   <th width="20px"> <h3> S4 </h3> </th>
-                  <td><span class="fullpasscheck"> Check all <input type="checkbox" id="S4FullPass"> </span></td>
+                  <td><span class="fullpasscheck"> Check All <input type="checkbox" id="S4FullPass"> </span></td>
               </tr>
               <tr>
                   <td colspan="2">
@@ -360,7 +361,7 @@
           <table border="0px">
               <tr>
                   <th width="20px"> <h3> S5 </h3> </th>
-                  <td><span class="fullpasscheck"> Check all <input type="checkbox" id="S5FullPass"> </span></td>
+                  <td><span class="fullpasscheck"> Check All <input type="checkbox" id="S5FullPass"> </span></td>
               </tr>
               <tr>
                   <td colspan="2">
@@ -439,7 +440,7 @@
           <table border="0px">
               <tr>
                   <th width="20px"> <h3> S6 </h3> </th>
-                  <td><span class="fullpasscheck"> Check all <input type="checkbox" id="S6FullPass"> </span></td>
+                  <td><span class="fullpasscheck"> Check All <input type="checkbox" id="S6FullPass"> </span></td>
               </tr>
               <tr>
                   <td colspan="2">
@@ -518,7 +519,7 @@
           <table border="0px">
               <tr>
                   <th width="20px"> <h3> S7 </h3> </th>
-                  <td><span class="fullpasscheck"> Check all <input type="checkbox" id="S7FullPass"> </span></td>
+                  <td><span class="fullpasscheck"> Check All <input type="checkbox" id="S7FullPass"> </span></td>
               </tr>
               <tr>
                   <td colspan="2">
@@ -597,7 +598,7 @@
           <table border="0px">
               <tr>
                   <th width="20px"> <h3> S8 </h3> </th>
-                  <td><span class="fullpasscheck"> Check all <input type="checkbox" id="S8FullPass"> </span></td>
+                  <td><span class="fullpasscheck"> Check All <input type="checkbox" id="S8FullPass"> </span></td>
               </tr>
               <tr>
                   <td colspan="2">
@@ -663,28 +664,24 @@
       <div class="resultBox" hidden>
         <table border="0px">
             <tr id="S1S2Result">
-                <td width="60%" style="text-align:right;"> Total Credits from S1 - S2 </td>
+                <td width="60%" style="text-align:right;"> Your Total Credits from S1 - S2 </td>
                 <td width="3%" style="text-align:center;"> : </td>
                 <td width="37%"  style="font-size:60;"> <div class="s1s2" class="green">  </div> </td>
             </tr>
             <tr id="S1S4Result">
-                <td style="text-align:right;"> Total Credits from S1 - S4 </td>
+                <td style="text-align:right;"> Your Total Credits from S1 - S4 </td>
                 <td style="text-align:center;"> : </td>
                 <td style="font-size:60;"> <div class="s1s4" class="green">  </div> </td>
             </tr>
-            <!-- <tr id="S1S6Result">
-                <td style="text-align:center;"> S1 - S6 : <span class="s1s6"></span> </td>
-                <td style="text-align:center;" colspan="2"> S1 - S8 : <span class="s1s6"></span> </td>
-            </tr> -->
 
-            <table border="1px" rules="all" style="text-align:center">
+            <table border="1px" rules="all" style="text-align:center;" class="AnalysisTable">
               <tr>
-                <th></th>
-                <th> First Year  </th>
-                <th> Second Year </th>
-                <th> Third Year  </th>
-                <th> Fouth Year  </th>
-                <th>Total <span class=""></span> </th>
+                <th width="20%"></th>
+                <th width="15%"> First Year  </th>
+                <th width="15%"> Second Year </th>
+                <th width="15%"> Third Year  </th>
+                <th width="15%"> Fouth Year  </th>
+                <th width="20%">Total <span class=""></span> </th>
               </tr>
               <tr>
                 <th> Cum. Credits</th>
@@ -692,23 +689,23 @@
                 <td> <div class="s1s4"> </div> </td>
                 <td> <div class="s1s6"> </div> </td>
                 <td> <div class="s1s8"> </div> </td>
-                <td> <div class="s1s8">  </td>
+                <td> <B> <div class="s1s8"> </div> </B> </td>
               </tr>
               <tr>
-                <th>Passed Subs</th>
+                <th>Completed Subs</th>
                 <td> <span class="TotpassdS1Subs"></span> + <span class="TotpassdS2Subs"></span> </td>
                 <td> <span class="TotpassdS3Subs"></span> + <span class="TotpassdS4Subs"></span> </td>
                 <td> <span class="TotpassdS5Subs"></span> + <span class="TotpassdS6Subs"></span> </td>
                 <td> <span class="TotpassdS7Subs"></span> + <span class="TotpassdS8Subs"></span> </td>
-                <td> <span class="TotpassdSubs"></span> / 50 </td>
+                <td> <B> <span class="TotpassdSubs"></span> / 50 <B> </td>
               </tr>
               <tr>
-                <th>Failed Subs</th>
+                <th>Uncompleted Subs</th>
                 <td> <span class="TotfailedS1Subs"></span> + <span class="TotfailedS2Subs"></span> </td>
                 <td> <span class="TotfailedS3Subs"></span> + <span class="TotfailedS4Subs"></span> </td>
                 <td> <span class="TotfailedS5Subs"></span> + <span class="TotfailedS6Subs"></span> </td>
                 <td> <span class="TotfailedS7Subs"></span> + <span class="TotfailedS8Subs"></span> </td>
-                <td> <span class="TotfailedSubs"></span> / 50 </td>
+                <td> <B> <span class="TotfailedSubs"></span> / 50 <B> </td>
               </tr>
             </table>
         </table>
