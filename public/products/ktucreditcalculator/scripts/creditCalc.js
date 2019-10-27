@@ -6,6 +6,12 @@ $(function() {
   instruction() // Calling How to use Box
 
   var credit = {
+    //Miscellaneous
+    "EL101":3,
+    "EL102":3,
+    "EL103":3,
+    "EL104":3,
+    "EL105":3,
     //S1 & S2 [Full Course]
     "LAB":1,   // For all LAB 1 credit concept
     "MA101":4, // Calculus
@@ -68,6 +74,27 @@ $(function() {
     "CS332":2, // Microprocessor Lab
     "CS334":1, // Network Programming Lab
     "CS352":2, // Comprehensive Exam
+    //S7 all CSE subs
+    "CS401":4, // Computer Graphics
+    "CS403":3, // Programming Paradigms
+    "CS405":3, // Computer System Architecture
+    "CS407":3, // Distributed Computing
+    "CS409":3, // Cryptography and Network Security
+    "CS461":3, // Computational Geometry
+    "CS463":3, // Digital Image Processing
+    "CS465":3, // Bio Informatics
+    "CS467":3, // Machine Learning
+    "CS469":3, // Computational Complexity
+    "CS451":2, // Seminar and Project Preliminary
+    //S8 all CSE subs
+    "CS402":3, // Data Mining and Ware Housing
+    "CS404":3, // Embedded Systems
+    "CS462":3, // Fuzzy Set Theory and Applications
+    "CS464":3, // Artificial Intelligence
+    "CS466":3, // Data Science
+    "CS468":3, // Cloud Computing
+    "CS472":3, // Principles of Information Security
+    "CS492":6, // Project
     //S3 & S4 all ECE subs
     "EC201":4, // Network Theory
     "EC203":4, // Solid State Devices
@@ -120,6 +147,12 @@ $(function() {
     "BT208":3, // Principles of Biochemistry
   };
   var cName = {
+    //Miscellaneous
+    "EL101":"Elective 1",
+    "EL102":"Elective 2",
+    "EL103":"Elective 3",
+    "EL104":"Elective 4",
+    "EL105":"Elective 5 (Non-departmental)",
     //S1 & S2 [Full Course]
     "MA101":"Calculus - MA101",
     "PH100":"Engineering Physics - PH100",
@@ -157,31 +190,52 @@ $(function() {
     "CS208":"Principles of Database Design - CS208",
     "HS210":"Life Skills - HS210",
     //S5 all CSE subs
-    "CS301":"Theory of Computation",
-    "CS303":"System Software",
-    "CS305":"Microprocessors and Microcontrollers",
-    "CS307":"DataCommunication",
-    "CS309":"Graph Theory and Combinatorics",
-    "CS361":"Soft Computing",
-    "CS363":"Signals and Systems",
-    "CS365":"Optimization Techniques",
-    "CS367":"Logic for Computer Science",
-    "CS369":"Digital System Testing & Testable Design",
-    "CS341":"Design Project",
+    "CS301":"Theory of Computation - CS301",
+    "CS303":"System Software - CS303",
+    "CS305":"Microprocessors and Microcontrollers - CS305",
+    "CS307":"DataCommunication - CS307",
+    "CS309":"Graph Theory and Combinatorics - CS309",
+    "CS361":"Soft Computing - CS361",
+    "CS363":"Signals and Systems - CS363",
+    "CS365":"Optimization Techniques - CS365",
+    "CS367":"Logic for Computer Science - CS367",
+    "CS369":"Digital System Testing & Testable Design - CS369",
+    "CS341":"Design Project - CS341",
     //S6 all CSE subs
-    "CS302":"Design and Analysis of Algorithms",
-    "CS304":"Compiler Design",
-    "CS306":"Computer Networks",
-    "CS308":"Software Engineering and Project Management",
-    "HS300":"Principles of Management",
-    "CS362":"Computer Vision",
-    "CS364":"Mobile Computing",
-    "CS366":"Natural Language Processing",
-    "CS368":"Web Technologies",
-    "CS372":"High Performance Computing",
-    "CS332":"Microprocessor Lab",
-    "CS334":"Network Programming Lab",
-    "CS352":"Comprehensive Exam",
+    "CS302":"Design and Analysis of Algorithms - CS302",
+    "CS304":"Compiler Design - CS304",
+    "CS306":"Computer Networks - CS306",
+    "CS308":"Software Engineering and Project Management - CS308",
+    "HS300":"Principles of Management - HS300",
+    "CS362":"Computer Vision - CS362",
+    "CS364":"Mobile Computing - CS364",
+    "CS366":"Natural Language Processing - CS366",
+    "CS368":"Web Technologies - CS368",
+    "CS372":"High Performance Computing - CS372",
+    "CS332":"Microprocessor Lab - CS332",
+    "CS334":"Network Programming Lab - CS334",
+    "CS352":"Comprehensive Exam - CS352",
+    //S7 all CSE subs
+    "CS401":"Computer Graphics - CS401",
+    "CS403":"Programming Paradigms - CS403",
+    "CS405":"Computer System Architecture - CS405",
+    "CS407":"Distributed Computing - CS407",
+    "CS409":"Cryptography and Network Security - CS409",
+    "CS461":"Computational Geometry - CS461",
+    "CS463":"Digital Image Processing - CS463",
+    "CS465":"Bio Informatics - CS465",
+    "CS467":"Machine Learning - CS467",
+    "CS469":"Computational Complexity - CS469",
+    "CS451":"Seminar and Project Preliminary - CS451",
+    //S8 all CSE subs
+    "CS402":"Data Mining and Ware Housing - CS402",
+    "CS404":"Embedded Systems - CS404",
+    "CS462":"Fuzzy Set Theory and Applications - CS462",
+    "CS464":"Artificial Intelligence - CS464",
+    "CS466":"Data Science - CS466",
+    "CS468":"Cloud Computing - CS468",
+    "CS472":"Principles of Information Security - CS472",
+    "CS492":"Project - CS492",
     //S3 & S4 all ECE subs
     "EC201":"Network Theory - EC201",
     "EC203":"Solid State Devices - EC203",
@@ -238,8 +292,10 @@ $(function() {
   var S2 = {"A":"","B":"","C":"","D":"","E":"","F":""}
   var S3 = {"A":"","B":"","C":"","D":"","E":"","F":""}
   var S4 = {"A":"","B":"","C":"","D":"","E":"","F":""}
-//  var S5 = {"A":"","B":"","C":"","D":"","E":"","F":""}
-//  var S6 = {"A":"","B":"","C":"","D":"","E":"","F":""}
+  var S5 = {"A":"","B":"","C":"","D":"","E":"","F":"","S":""}
+  var S6 = {"A":"","B":"","C":"","D":"","E":"","F":"","U":""}
+  var S7 = {"A":"","B":"","C":"","D":"","E":"","F":"","S":""}
+  var S8 = {"A":"","B":"","C":"","D":"","E":""}
 
 
   $("#show").click(function() {
@@ -303,6 +359,37 @@ $(function() {
     S4['D']="CS206";
     S4['E']="CS208";
     S4['F']="HS210";
+    //S5
+    S5['A']="CS301";
+    S5['B']="CS303";
+    S5['C']="CS305";
+    S5['D']="CS307";
+    S5['E']="CS309";
+    S5['F']="EL101";
+    S5['S']="CS341";
+    //S6
+    S6['A']="CS302";
+    S6['B']="CS304";
+    S6['C']="CS306";
+    S6['D']="CS308";
+    S6['E']="HS300";
+    S6['F']="EL102";
+    S6['U']="CS352";
+    //S7
+    S7['A']="CS401";
+    S7['B']="CS403";
+    S7['C']="CS405";
+    S7['D']="CS407";
+    S7['E']="CS409";
+    S7['F']="EL103";
+    S7['S']="CS451";
+    //S8
+    S8['A']="CS402";
+    S8['B']="CS404";
+    S8['C']="EL104";
+    S8['D']="EL105";
+    S8['E']="CS492";
+
   }
   function getME() {
     //S1
@@ -511,66 +598,182 @@ $(function() {
     $("#S4D_Credit").html(credit[S4['D']]);
     $("#S4E_Credit").html(credit[S4['E']]);
     $("#S4F_Credit").html(credit[S4['F']]);
+    //S5 Displaying
+    $("#S5A_Name").html(cName[S5['A']]);
+    $("#S5B_Name").html(cName[S5['B']]);
+    $("#S5C_Name").html(cName[S5['C']]);
+    $("#S5D_Name").html(cName[S5['D']]);
+    $("#S5E_Name").html(cName[S5['E']]);
+    $("#S5F_Name").html(cName[S5['F']]);
+    $("#S5S_Name").html(cName[S5['S']]);
+    $("#S5A_Credit").html(credit[S5['A']]);
+    $("#S5B_Credit").html(credit[S5['B']]);
+    $("#S5C_Credit").html(credit[S5['C']]);
+    $("#S5D_Credit").html(credit[S5['D']]);
+    $("#S5E_Credit").html(credit[S5['E']]);
+    $("#S5F_Credit").html(credit[S5['F']]);
+    $("#S5S_Credit").html(credit[S5['S']]);
+    //S6 Displaying
+    $("#S6A_Name").html(cName[S6['A']]);
+    $("#S6B_Name").html(cName[S6['B']]);
+    $("#S6C_Name").html(cName[S6['C']]);
+    $("#S6D_Name").html(cName[S6['D']]);
+    $("#S6E_Name").html(cName[S6['E']]);
+    $("#S6F_Name").html(cName[S6['F']]);
+    $("#S6U_Name").html(cName[S6['U']]);
+    $("#S6A_Credit").html(credit[S6['A']]);
+    $("#S6B_Credit").html(credit[S6['B']]);
+    $("#S6C_Credit").html(credit[S6['C']]);
+    $("#S6D_Credit").html(credit[S6['D']]);
+    $("#S6E_Credit").html(credit[S6['E']]);
+    $("#S6F_Credit").html(credit[S6['F']]);
+    $("#S6U_Credit").html(credit[S6['U']]);
+    //S7 Displaying
+    $("#S7A_Name").html(cName[S7['A']]);
+    $("#S7B_Name").html(cName[S7['B']]);
+    $("#S7C_Name").html(cName[S7['C']]);
+    $("#S7D_Name").html(cName[S7['D']]);
+    $("#S7E_Name").html(cName[S7['E']]);
+    $("#S7F_Name").html(cName[S7['F']]);
+    $("#S7S_Name").html(cName[S7['S']]);
+    $("#S7A_Credit").html(credit[S7['A']]);
+    $("#S7B_Credit").html(credit[S7['B']]);
+    $("#S7C_Credit").html(credit[S7['C']]);
+    $("#S7D_Credit").html(credit[S7['D']]);
+    $("#S7E_Credit").html(credit[S7['E']]);
+    $("#S7F_Credit").html(credit[S7['F']]);
+    $("#S7S_Credit").html(credit[S7['S']]);
+    //S8 Displaying
+    $("#S8A_Name").html(cName[S8['A']]);
+    $("#S8B_Name").html(cName[S8['B']]);
+    $("#S8C_Name").html(cName[S8['C']]);
+    $("#S8D_Name").html(cName[S8['D']]);
+    $("#S8E_Name").html(cName[S8['E']]);
+    $("#S8A_Credit").html(credit[S8['A']]);
+    $("#S8B_Credit").html(credit[S8['B']]);
+    $("#S8C_Credit").html(credit[S8['C']]);
+    $("#S8D_Credit").html(credit[S8['D']]);
+    $("#S8E_Credit").html(credit[S8['E']]);
     CalculateCredit();
   }
 
   function CalculateCredit() {
     $("#CalcBtn").click(function() {
-      MaxCreditData    = {"S1":23,"S2":24,"S3":24,"S4":23};
-      TotEarndCrdt     = {"S1":0,"S2":0,"S3":0,"S4":0};
-      TotEarndAccmCrdt = {"S1":0,"S2":0,"S3":0,"S4":0};
-      LabCrdt          = {"S1":3,"S2":3,"S3":2,"S4":2};
-      Passed           = {"S1":0,"S2":0,"S3":0,"S4":0,"Total":0}
-      SemesterSelection= {"S1":false,"S2":false,"S3":false,"S4":false}
+      MaxCreditData    = {"S1":23,"S2":24,"S3":24,"S4":23,"S5":23,"S6":23,"S7":22,"S8":18};
+      TotEarndCrdt     = {"S1":0,"S2":0,"S3":0,"S4":0,"S5":0,"S6":0,"S7":0,"S8":0};
+      TotEarndAccmCrdt = {"S1":0,"S2":0,"S3":0,"S4":0,"S5":0,"S6":0,"S7":0,"S8":0};
+      LabCrdt          = {"S1":3,"S2":3,"S3":2,"S4":2,"S5":0,"S6":0,"S7":0,"S8":0};
+      Passed           = {"S1":0,"S2":0,"S3":0,"S4":0,"S5":0,"S6":0,"S7":0,"S8":0,"Total":0}
+      Failed           = {"S1":0,"S2":0,"S3":0,"S4":0,"S5":0,"S6":0,"S7":0,"S8":0,"Total":0}
+      SemesterSelection= {"S1":false,"S2":false,"S3":false,"S4":false,"S5":false,"S6":false,"S7":false,"S8":false}
+
       //S1 Checking
-      if ($('#S1A').is(":checked")) {TotEarndCrdt['S1'] += credit[S1['A']]; Passed['S1']+=1; SemesterSelection['S1']=true;}
-      if ($('#S1B').is(":checked")) {TotEarndCrdt['S1'] += credit[S1['B']]; Passed['S1']+=1; SemesterSelection['S1']=true;}
-      if ($('#S1C').is(":checked")) {TotEarndCrdt['S1'] += credit[S1['C']]; Passed['S1']+=1; SemesterSelection['S1']=true;}
-      if ($('#S1D').is(":checked")) {TotEarndCrdt['S1'] += credit[S1['D']]; Passed['S1']+=1; SemesterSelection['S1']=true;}
-      if ($('#S1E').is(":checked")) {TotEarndCrdt['S1'] += credit[S1['E']]; Passed['S1']+=1; SemesterSelection['S1']=true;}
-      if ($('#S1F').is(":checked")) {TotEarndCrdt['S1'] += credit[S1['F']]; Passed['S1']+=1; SemesterSelection['S1']=true;}
+      if ($('#S1A').is(":checked")) {TotEarndCrdt['S1'] += credit[S1['A']]; Passed['S1']+=1; SemesterSelection['S1']=true;} else {Failed['S1']+=1;}
+      if ($('#S1B').is(":checked")) {TotEarndCrdt['S1'] += credit[S1['B']]; Passed['S1']+=1; SemesterSelection['S1']=true;} else {Failed['S1']+=1;}
+      if ($('#S1C').is(":checked")) {TotEarndCrdt['S1'] += credit[S1['C']]; Passed['S1']+=1; SemesterSelection['S1']=true;} else {Failed['S1']+=1;}
+      if ($('#S1D').is(":checked")) {TotEarndCrdt['S1'] += credit[S1['D']]; Passed['S1']+=1; SemesterSelection['S1']=true;} else {Failed['S1']+=1;}
+      if ($('#S1E').is(":checked")) {TotEarndCrdt['S1'] += credit[S1['E']]; Passed['S1']+=1; SemesterSelection['S1']=true;} else {Failed['S1']+=1;}
+      if ($('#S1F').is(":checked")) {TotEarndCrdt['S1'] += credit[S1['F']]; Passed['S1']+=1; SemesterSelection['S1']=true;} else {Failed['S1']+=1;}
       LabCrdt['S1'] = parseInt($('#s1labcrdt').val());
       if (LabCrdt['S1']!=0) {SemesterSelection['S1']=true}
       TotEarndCrdt['S1'] += LabCrdt['S1'];
+
       //S2 Checking
-      if ($('#S2A').is(":checked")) {TotEarndCrdt['S2'] += credit[S2['A']]; Passed['S2']+=1; SemesterSelection['S2']=true;}
-      if ($('#S2B').is(":checked")) {TotEarndCrdt['S2'] += credit[S2['B']]; Passed['S2']+=1; SemesterSelection['S2']=true;}
-      if ($('#S2C').is(":checked")) {TotEarndCrdt['S2'] += credit[S2['C']]; Passed['S2']+=1; SemesterSelection['S2']=true;}
-      if ($('#S2D').is(":checked")) {TotEarndCrdt['S2'] += credit[S2['D']]; Passed['S2']+=1; SemesterSelection['S2']=true;}
-      if ($('#S2E').is(":checked")) {TotEarndCrdt['S2'] += credit[S2['E']]; Passed['S2']+=1; SemesterSelection['S2']=true;}
-      if ($('#S2F').is(":checked")) {TotEarndCrdt['S2'] += credit[S2['F']]; Passed['S2']+=1; SemesterSelection['S2']=true;}
+      if ($('#S2A').is(":checked")) {TotEarndCrdt['S2'] += credit[S2['A']]; Passed['S2']+=1; SemesterSelection['S2']=true;} else {Failed['S2']+=1;}
+      if ($('#S2B').is(":checked")) {TotEarndCrdt['S2'] += credit[S2['B']]; Passed['S2']+=1; SemesterSelection['S2']=true;} else {Failed['S2']+=1;}
+      if ($('#S2C').is(":checked")) {TotEarndCrdt['S2'] += credit[S2['C']]; Passed['S2']+=1; SemesterSelection['S2']=true;} else {Failed['S2']+=1;}
+      if ($('#S2D').is(":checked")) {TotEarndCrdt['S2'] += credit[S2['D']]; Passed['S2']+=1; SemesterSelection['S2']=true;} else {Failed['S2']+=1;}
+      if ($('#S2E').is(":checked")) {TotEarndCrdt['S2'] += credit[S2['E']]; Passed['S2']+=1; SemesterSelection['S2']=true;} else {Failed['S2']+=1;}
+      if ($('#S2F').is(":checked")) {TotEarndCrdt['S2'] += credit[S2['F']]; Passed['S2']+=1; SemesterSelection['S2']=true;} else {Failed['S2']+=1;}
       LabCrdt['S2'] = parseInt($('#s2labcrdt').val());
       if (LabCrdt['S2']!=0) {SemesterSelection['S2']=true}
       TotEarndCrdt['S2'] += LabCrdt['S2'];
+
       //S3 Checking
-      if ($('#S3A').is(":checked")) {TotEarndCrdt['S3'] += credit[S3['A']]; Passed['S3']+=1; SemesterSelection['S3']=true;}
-      if ($('#S3B').is(":checked")) {TotEarndCrdt['S3'] += credit[S3['B']]; Passed['S3']+=1; SemesterSelection['S3']=true;}
-      if ($('#S3C').is(":checked")) {TotEarndCrdt['S3'] += credit[S3['C']]; Passed['S3']+=1; SemesterSelection['S3']=true;}
-      if ($('#S3D').is(":checked")) {TotEarndCrdt['S3'] += credit[S3['D']]; Passed['S3']+=1; SemesterSelection['S3']=true;}
-      if ($('#S3E').is(":checked")) {TotEarndCrdt['S3'] += credit[S3['E']]; Passed['S3']+=1; SemesterSelection['S3']=true;}
-      if ($('#S3F').is(":checked")) {TotEarndCrdt['S3'] += credit[S3['F']]; Passed['S3']+=1; SemesterSelection['S3']=true;}
+      if ($('#S3A').is(":checked")) {TotEarndCrdt['S3'] += credit[S3['A']]; Passed['S3']+=1; SemesterSelection['S3']=true;} else {Failed['S3']+=1;}
+      if ($('#S3B').is(":checked")) {TotEarndCrdt['S3'] += credit[S3['B']]; Passed['S3']+=1; SemesterSelection['S3']=true;} else {Failed['S3']+=1;}
+      if ($('#S3C').is(":checked")) {TotEarndCrdt['S3'] += credit[S3['C']]; Passed['S3']+=1; SemesterSelection['S3']=true;} else {Failed['S3']+=1;}
+      if ($('#S3D').is(":checked")) {TotEarndCrdt['S3'] += credit[S3['D']]; Passed['S3']+=1; SemesterSelection['S3']=true;} else {Failed['S3']+=1;}
+      if ($('#S3E').is(":checked")) {TotEarndCrdt['S3'] += credit[S3['E']]; Passed['S3']+=1; SemesterSelection['S3']=true;} else {Failed['S3']+=1;}
+      if ($('#S3F').is(":checked")) {TotEarndCrdt['S3'] += credit[S3['F']]; Passed['S3']+=1; SemesterSelection['S3']=true;} else {Failed['S3']+=1;}
       LabCrdt['S3'] = parseInt($('#s3labcrdt').val());
       if (LabCrdt['S3']!=0) {SemesterSelection['S3']=true}
       TotEarndCrdt['S3'] += LabCrdt['S3'];
+
       //S4 Checking
-      if ($('#S4A').is(":checked")) {TotEarndCrdt['S4'] += credit[S4['A']]; Passed['S4']+=1; SemesterSelection['S4']=true;}
-      if ($('#S4B').is(":checked")) {TotEarndCrdt['S4'] += credit[S4['B']]; Passed['S4']+=1; SemesterSelection['S4']=true;}
-      if ($('#S4C').is(":checked")) {TotEarndCrdt['S4'] += credit[S4['C']]; Passed['S4']+=1; SemesterSelection['S4']=true;}
-      if ($('#S4D').is(":checked")) {TotEarndCrdt['S4'] += credit[S4['D']]; Passed['S4']+=1; SemesterSelection['S4']=true;}
-      if ($('#S4E').is(":checked")) {TotEarndCrdt['S4'] += credit[S4['E']]; Passed['S4']+=1; SemesterSelection['S4']=true;}
-      if ($('#S4F').is(":checked")) {TotEarndCrdt['S4'] += credit[S4['F']]; Passed['S4']+=1; SemesterSelection['S4']=true;}
+      if ($('#S4A').is(":checked")) {TotEarndCrdt['S4'] += credit[S4['A']]; Passed['S4']+=1; SemesterSelection['S4']=true;} else {Failed['S4']+=1;}
+      if ($('#S4B').is(":checked")) {TotEarndCrdt['S4'] += credit[S4['B']]; Passed['S4']+=1; SemesterSelection['S4']=true;} else {Failed['S4']+=1;}
+      if ($('#S4C').is(":checked")) {TotEarndCrdt['S4'] += credit[S4['C']]; Passed['S4']+=1; SemesterSelection['S4']=true;} else {Failed['S4']+=1;}
+      if ($('#S4D').is(":checked")) {TotEarndCrdt['S4'] += credit[S4['D']]; Passed['S4']+=1; SemesterSelection['S4']=true;} else {Failed['S4']+=1;}
+      if ($('#S4E').is(":checked")) {TotEarndCrdt['S4'] += credit[S4['E']]; Passed['S4']+=1; SemesterSelection['S4']=true;} else {Failed['S4']+=1;}
+      if ($('#S4F').is(":checked")) {TotEarndCrdt['S4'] += credit[S4['F']]; Passed['S4']+=1; SemesterSelection['S4']=true;} else {Failed['S4']+=1;}
       LabCrdt['S4'] = parseInt($('#s4labcrdt').val());
       if (LabCrdt['S4']!=0) {SemesterSelection['S4']=true}
       TotEarndCrdt['S4'] += LabCrdt['S4'];
+
+      //S5 Checking
+      if ($('#S5A').is(":checked")) {TotEarndCrdt['S5'] += credit[S5['A']]; Passed['S5']+=1; SemesterSelection['S5']=true;} else {Failed['S5']+=1;}
+      if ($('#S5B').is(":checked")) {TotEarndCrdt['S5'] += credit[S5['B']]; Passed['S5']+=1; SemesterSelection['S5']=true;} else {Failed['S5']+=1;}
+      if ($('#S5C').is(":checked")) {TotEarndCrdt['S5'] += credit[S5['C']]; Passed['S5']+=1; SemesterSelection['S5']=true;} else {Failed['S5']+=1;}
+      if ($('#S5D').is(":checked")) {TotEarndCrdt['S5'] += credit[S5['D']]; Passed['S5']+=1; SemesterSelection['S5']=true;} else {Failed['S5']+=1;}
+      if ($('#S5E').is(":checked")) {TotEarndCrdt['S5'] += credit[S5['E']]; Passed['S5']+=1; SemesterSelection['S5']=true;} else {Failed['S5']+=1;}
+      if ($('#S5F').is(":checked")) {TotEarndCrdt['S5'] += credit[S5['F']]; Passed['S5']+=1; SemesterSelection['S5']=true;} else {Failed['S5']+=1;}
+      if ($('#S5S').is(":checked")) {TotEarndCrdt['S5'] += credit[S5['S']]; Passed['S5']+=1; SemesterSelection['S5']=true;} else {Failed['S5']+=1;}
+      LabCrdt['S5'] = parseInt($('#s5labcrdt').val());
+      if (LabCrdt['S5']!=0) {SemesterSelection['S5']=true}
+      TotEarndCrdt['S5'] += LabCrdt['S5'];
+
+      //S6 Checking
+      if ($('#S6A').is(":checked")) {TotEarndCrdt['S6'] += credit[S6['A']]; Passed['S6']+=1; SemesterSelection['S6']=true;} else {Failed['S6']+=1;}
+      if ($('#S6B').is(":checked")) {TotEarndCrdt['S6'] += credit[S6['B']]; Passed['S6']+=1; SemesterSelection['S6']=true;} else {Failed['S6']+=1;}
+      if ($('#S6C').is(":checked")) {TotEarndCrdt['S6'] += credit[S6['C']]; Passed['S6']+=1; SemesterSelection['S6']=true;} else {Failed['S6']+=1;}
+      if ($('#S6D').is(":checked")) {TotEarndCrdt['S6'] += credit[S6['D']]; Passed['S6']+=1; SemesterSelection['S6']=true;} else {Failed['S6']+=1;}
+      if ($('#S6E').is(":checked")) {TotEarndCrdt['S6'] += credit[S6['E']]; Passed['S6']+=1; SemesterSelection['S6']=true;} else {Failed['S6']+=1;}
+      if ($('#S6F').is(":checked")) {TotEarndCrdt['S6'] += credit[S6['F']]; Passed['S6']+=1; SemesterSelection['S6']=true;} else {Failed['S6']+=1;}
+      if ($('#S6U').is(":checked")) {TotEarndCrdt['S6'] += credit[S6['U']]; Passed['S6']+=1; SemesterSelection['S6']=true;} else {Failed['S6']+=1;}
+      LabCrdt['S6'] = parseInt($('#s6labcrdt').val());
+      if (LabCrdt['S6']!=0) {SemesterSelection['S6']=true}
+      TotEarndCrdt['S6'] += LabCrdt['S6'];
+
+      //S7 Checking
+      if ($('#S7A').is(":checked")) {TotEarndCrdt['S7'] += credit[S7['A']]; Passed['S7']+=1; SemesterSelection['S7']=true;} else {Failed['S7']+=1;}
+      if ($('#S7B').is(":checked")) {TotEarndCrdt['S7'] += credit[S7['B']]; Passed['S7']+=1; SemesterSelection['S7']=true;} else {Failed['S7']+=1;}
+      if ($('#S7C').is(":checked")) {TotEarndCrdt['S7'] += credit[S7['C']]; Passed['S7']+=1; SemesterSelection['S7']=true;} else {Failed['S7']+=1;}
+      if ($('#S7D').is(":checked")) {TotEarndCrdt['S7'] += credit[S7['D']]; Passed['S7']+=1; SemesterSelection['S7']=true;} else {Failed['S7']+=1;}
+      if ($('#S7E').is(":checked")) {TotEarndCrdt['S7'] += credit[S7['E']]; Passed['S7']+=1; SemesterSelection['S7']=true;} else {Failed['S7']+=1;}
+      if ($('#S7F').is(":checked")) {TotEarndCrdt['S7'] += credit[S7['F']]; Passed['S7']+=1; SemesterSelection['S7']=true;} else {Failed['S7']+=1;}
+      if ($('#S7S').is(":checked")) {TotEarndCrdt['S7'] += credit[S7['S']]; Passed['S7']+=1; SemesterSelection['S7']=true;} else {Failed['S7']+=1;}
+      LabCrdt['S7'] = parseInt($('#s7labcrdt').val());
+      if (LabCrdt['S7']!=0) {SemesterSelection['S7']=true}
+      TotEarndCrdt['S7'] += LabCrdt['S7'];
+
+
+      //S8 Checking
+      if ($('#S8A').is(":checked")) {TotEarndCrdt['S8'] += credit[S8['A']];Passed['S8']+=1; SemesterSelection['S8']=true;} else {Failed['S8']+=1;}
+      if ($('#S8B').is(":checked")) {TotEarndCrdt['S8'] += credit[S8['B']];Passed['S8']+=1; SemesterSelection['S8']=true;} else {Failed['S8']+=1;}
+      if ($('#S8C').is(":checked")) {TotEarndCrdt['S8'] += credit[S8['C']];Passed['S8']+=1; SemesterSelection['S8']=true;} else {Failed['S8']+=1;}
+      if ($('#S8D').is(":checked")) {TotEarndCrdt['S8'] += credit[S8['D']];Passed['S8']+=1; SemesterSelection['S8']=true;} else {Failed['S8']+=1;}
+      if ($('#S8E').is(":checked")) {TotEarndCrdt['S8'] += credit[S8['E']];Passed['S8']+=1; SemesterSelection['S8']=true;} else {Failed['S8']+=1;}
+      // LabCrdt['S8'] = parseInt($('#s8labcrdt').val()); //No dropdown so ignored on 8th sem
+      if (LabCrdt['S8']!=0) {SemesterSelection['S8']=true}
+      TotEarndCrdt['S8'] += LabCrdt['S8'];
+
+
       //Calculating Sums of Earned Credits
       TotEarndAccmCrdt['S1']=TotEarndCrdt['S1'];
       TotEarndAccmCrdt['S2']=TotEarndAccmCrdt['S1']+TotEarndCrdt['S2'];
       TotEarndAccmCrdt['S3']=TotEarndAccmCrdt['S2']+TotEarndCrdt['S3'];
       TotEarndAccmCrdt['S4']=TotEarndAccmCrdt['S3']+TotEarndCrdt['S4'];
+      TotEarndAccmCrdt['S5']=TotEarndAccmCrdt['S4']+TotEarndCrdt['S5'];
+      TotEarndAccmCrdt['S6']=TotEarndAccmCrdt['S5']+TotEarndCrdt['S6'];
+      TotEarndAccmCrdt['S7']=TotEarndAccmCrdt['S6']+TotEarndCrdt['S7'];
+      TotEarndAccmCrdt['S8']=TotEarndAccmCrdt['S7']+TotEarndCrdt['S8'];
 
       //Calculating no. of passed subjects
-      Passed['Total']=Passed['S1']+Passed['S2']+Passed['S3']+Passed['S4'];
+      Passed['Total'] = Passed['S1']+Passed['S2']+Passed['S3']+Passed['S4']+Passed['S5']+Passed['S6']+Passed['S7']+Passed['S8'];
 
+      //Calculating no. of passed subjects
+      Failed['Total'] = Failed['S1']+Failed['S2']+Failed['S3']+Failed['S4']+Failed['S5']+Failed['S6']+Failed['S7']+Failed['S8'];
 
       //Displays Rest
       dispSemWiseCredits(); // Displaying Calclated data to the tables
@@ -585,70 +788,110 @@ $(function() {
     $("#s2Total").html(TotEarndCrdt['S2']);
     $("#s3Total").html(TotEarndCrdt['S3']);
     $("#s4Total").html(TotEarndCrdt['S4']);
+    $("#s5Total").html(TotEarndCrdt['S5']);
+    $("#s6Total").html(TotEarndCrdt['S6']);
+    $("#s7Total").html(TotEarndCrdt['S7']);
+    $("#s8Total").html(TotEarndCrdt['S8']);
     //Accmltd credits
     $("#AccmltdS1").html(TotEarndAccmCrdt['S1']);
     $("#AccmltdS2").html(TotEarndAccmCrdt['S2']);
     $("#AccmltdS3").html(TotEarndAccmCrdt['S3']);
     $("#AccmltdS4").html(TotEarndAccmCrdt['S4']);
+    $("#AccmltdS5").html(TotEarndAccmCrdt['S5']);
+    $("#AccmltdS6").html(TotEarndAccmCrdt['S6']);
+    $("#AccmltdS7").html(TotEarndAccmCrdt['S7']);
+    $(".AccmltdS8").html(TotEarndAccmCrdt['S8']);
     //Accmltd max credits
-    $("#AccmltdMaxS1").html(MaxCreditData['S1']);
-    $("#AccmltdMaxS2").html(MaxCreditData['S2']+MaxCreditData['S1']);
-    $("#AccmltdMaxS3").html(MaxCreditData['S3']+MaxCreditData['S2']+MaxCreditData['S1']);
-    $("#AccmltdMaxS4").html(MaxCreditData['S4']+MaxCreditData['S3']+MaxCreditData['S2']+MaxCreditData['S1']);
+    $(".AccmltdMaxS1").html(MaxCreditData['S1']);
+    $(".AccmltdMaxS2").html(MaxCreditData['S2']+MaxCreditData['S1']);
+    $(".AccmltdMaxS3").html(MaxCreditData['S3']+MaxCreditData['S2']+MaxCreditData['S1']);
+    $(".AccmltdMaxS4").html(MaxCreditData['S4']+MaxCreditData['S3']+MaxCreditData['S2']+MaxCreditData['S1']);
+    $(".AccmltdMaxS5").html(MaxCreditData['S5']+MaxCreditData['S4']+MaxCreditData['S3']+MaxCreditData['S2']+MaxCreditData['S1']);
+    $(".AccmltdMaxS6").html(MaxCreditData['S6']+MaxCreditData['S5']+MaxCreditData['S4']+MaxCreditData['S3']+MaxCreditData['S2']+MaxCreditData['S1']);
+    $(".AccmltdMaxS7").html(MaxCreditData['S7']+MaxCreditData['S6']+MaxCreditData['S5']+MaxCreditData['S4']+MaxCreditData['S3']+MaxCreditData['S2']+MaxCreditData['S1']);
+    $(".AccmltdMaxS8").html(MaxCreditData['S8']+MaxCreditData['S7']+MaxCreditData['S6']+MaxCreditData['S5']+MaxCreditData['S4']+MaxCreditData['S3']+MaxCreditData['S2']+MaxCreditData['S1']);
   }
   function dispMaxCredits() {
     //S1 not needed
     $("#S2MaxCredit").html(MaxCreditData['S2']);
     $("#S3MaxCredit").html(MaxCreditData['S3']);
     $("#S4MaxCredit").html(MaxCreditData['S4']);
+    $("#S5MaxCredit").html(MaxCreditData['S5']);
+    $("#S6MaxCredit").html(MaxCreditData['S6']);
+    $("#S7MaxCredit").html(MaxCreditData['S7']);
+    $("#S8MaxCredit").html(MaxCreditData['S8']);
   }
   function checkVoidAndDisplayResult() {
-    if(TotEarndAccmCrdt['S4']!=0) {
-      $(".errorMsg").slideUp();
-      $(".resultBox").fadeIn(1500);
-      // Displaying Calculated Values
-      if(SemesterSelection['S1']==true || SemesterSelection['S2']==true || SemesterSelection['S3']==false && SemesterSelection['S4']==false) {
-        //Disp S1 and S2
-        $("#s1s2").html(TotEarndAccmCrdt['S2']);
-        $("#S1S4Result").fadeOut(); // Hiding S1S4 result if user doesn't input S3 and S4
-      }
-      if (SemesterSelection['S3']==true || SemesterSelection['S4']==true) {
-        //Disp S1 to S4
-        $("#s1s2").html(TotEarndAccmCrdt['S2']);
-        $("#S1S4Result").fadeIn(); // Showing in case of hiding before // BugFixed
-        $("#s1s4").html(TotEarndAccmCrdt['S4']);
-      }
-      var userMaxSem=0,TotalSupply=0;
-      if(SemesterSelection['S1']==true) {userMaxSem=6}
-      if(SemesterSelection['S2']==true) {userMaxSem=12}
-      if(SemesterSelection['S3']==true) {userMaxSem=18}
-      if(SemesterSelection['S4']==true) {userMaxSem=24}
-      TotalSupply=userMaxSem-Passed['Total'];
-      $("#ResultReview").html("You have cleared <b>" + Passed['Total'] + "</b> subjects out of <b>" + userMaxSem + " </b><br><b> " + TotalSupply + "</b> subjects left.");
-      if(TotalSupply==0) {$("#ResultReview").html("<font color='green'> Congratulations you have passed all subjects </font>")}
+    if(TotEarndAccmCrdt['S8']!=0) {
+        $(".errorMsg").slideUp();
+        $(".resultBox").fadeIn(1500);
+        // Displaying Calculated Values
+        if(SemesterSelection['S1']==true || SemesterSelection['S2']==true || SemesterSelection['S3']==false && SemesterSelection['S4']==false) {
+          //Disp S1 and S2
+          $(".s1s2").html(TotEarndAccmCrdt['S2']);
+          $("#S1S4Result").fadeOut(); // Hiding S1S4 result if user doesn't input S3 and S4
+        }
+        if (SemesterSelection['S3']==true || SemesterSelection['S4']==true) {
+          //Disp S1 to S4
+          $(".s1s2").html(TotEarndAccmCrdt['S2']);
+          $("#S1S4Result").fadeIn(); // Showing in case of hiding before // BugFixed
+          $(".s1s4").html(TotEarndAccmCrdt['S4']);
+        }
+        //Disp S1 to S4 
+        $(".s1s4").html(TotEarndAccmCrdt['S4']);
+        //Disp S1 to S6
+        $(".s1s6").html(TotEarndAccmCrdt['S6']);
+        $("#S1S6Result").fadeIn(); //
+        $(".s1s6").html(TotEarndAccmCrdt['S6']);
+
+        //Disp S1 to S8
+        $(".s1s8").html(TotEarndAccmCrdt['S8']);
+        $("#S1S8Result").fadeIn();
+        $(".s1s8").html(TotEarndAccmCrdt['S8']);
+
+        //Displaying Passed subjects
+        $(".TotpassdS1Subs").html(Passed['S1']);
+        $(".TotpassdS2Subs").html(Passed['S2']);
+        $(".TotpassdS3Subs").html(Passed['S3']);
+        $(".TotpassdS4Subs").html(Passed['S4']);
+        $(".TotpassdS5Subs").html(Passed['S5']);
+        $(".TotpassdS6Subs").html(Passed['S6']);
+        $(".TotpassdS7Subs").html(Passed['S7']);
+        $(".TotpassdS8Subs").html(Passed['S8']);
+        $(".TotpassdSubs").html(Passed['Total']);
+
+        //Displaying Failed subjects
+        $(".TotfailedS1Subs").html(Failed['S1']);
+        $(".TotfailedS2Subs").html(Failed['S2']);
+        $(".TotfailedS3Subs").html(Failed['S3']);
+        $(".TotfailedS4Subs").html(Failed['S4']);
+        $(".TotfailedS5Subs").html(Failed['S5']);
+        $(".TotfailedS6Subs").html(Failed['S6']);
+        $(".TotfailedS7Subs").html(Failed['S7']);
+        $(".TotfailedS8Subs").html(Failed['S8']);
+        $(".TotfailedSubs").html(Failed['Total']);
      } else {
-      // $(".errorMsg").slideUp(); //
       $(".resultBox").slideUp(500);
       $(".errorMsg").slideDown();
     }
   }
   function setResultClasses() {
     if(TotEarndAccmCrdt['S2']<26) {
-      $("#s1s2").removeClass("green");
-      $("#s1s2").addClass("red");
+      $(".s1s2").removeClass("green");
+      $(".s1s2").addClass("red");
     }
     else {
-      $("#s1s2").removeClass("red");
-      $("#s1s2").addClass("green");
+      $(".s1s2").removeClass("red");
+      $(".s1s2").addClass("green");
     }
     // Adding or Removing classes according to the total credits optained from S1 S2 S3 and S4
     if(TotEarndAccmCrdt['S4']<52) {
-      $("#s1s4").removeClass("green");
-      $("#s1s4").addClass("red");
+      $(".s1s4").removeClass("green");
+      $(".s1s4").addClass("red");
     }
     else {
-      $("#s1s4").removeClass("red");
-      $("#s1s4").addClass("green");
+      $(".s1s4").removeClass("red");
+      $(".s1s4").addClass("green");
     }
   }
   function dispShift(time) {
@@ -675,4 +918,51 @@ $(function() {
     $(".dispmsg").fadeOut(); // Hide displayMessege
     $(".instructionsBox").fadeOut(); // Hide instructionsBox
   }
+
+  $("#S1FullPass").click(function() {tickAllCheckboxWithSem('S1');});
+  $("#S2FullPass").click(function() {tickAllCheckboxWithSem('S2');});
+  $("#S3FullPass").click(function() {tickAllCheckboxWithSem('S3');});
+  $("#S4FullPass").click(function() {tickAllCheckboxWithSem('S4');});
+  $("#S5FullPass").click(function() {tickAllCheckboxWithSem('S5');});
+  $("#S6FullPass").click(function() {tickAllCheckboxWithSem('S6');});
+  $("#S7FullPass").click(function() {tickAllCheckboxWithSem('S7');});
+  $("#S8FullPass").click(function() {tickAllCheckboxWithSem('S8');});
+  function tickAllCheckboxWithSem(sem) {
+      subs = {
+      'S1' : ["#S1A","#S1B","#S1C","#S1D","#S1E","#S1F"],
+      'S2' : ["#S2A","#S2B","#S2C","#S2D","#S2E","#S2F"],
+      'S3' : ["#S3A","#S3B","#S3C","#S3D","#S3E","#S3F"],
+      'S4' : ["#S4A","#S4B","#S4C","#S4D","#S4E","#S4F"],
+      'S5' : ["#S5A","#S5B","#S5C","#S5D","#S5E","#S5F","#S5S"],
+      'S6' : ["#S6A","#S6B","#S6C","#S6D","#S6E","#S6F","#S6U"],
+      'S7' : ["#S7A","#S7B","#S7C","#S7D","#S7E","#S7F","#S7S"],
+      'S8' : ["#S8A","#S8B","#S8C","#S8D","#S8E"]
+    }
+    sems = {
+      'S1':"#S1FullPass",
+      'S2':"#S2FullPass",
+      'S3':"#S3FullPass",
+      'S4':"#S4FullPass",
+      'S5':"#S5FullPass",
+      'S6':"#S6FullPass",
+      'S7':"#S7FullPass",
+      'S8':"#S8FullPass"
+    }
+    //checkg whether checkbox is turned on or off
+    if ($(sems[sem]).is(":checked")) {
+      //Check all subs in S1
+      for (i=0;i<subs[sem].length;i++){
+        $(subs[sem][i]).prop('checked', true);
+      }
+
+    } else {
+      //Clear check all subs in S2
+      for (i=0;i<subs[sem].length;i++){
+        $(subs[sem][i]).prop('checked', false);
+      }
+    }
+  }
+
+
+
 });

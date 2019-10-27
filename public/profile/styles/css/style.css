@@ -1,0 +1,163 @@
+html,body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+  font-family:sans-serif;
+  background: #fff;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.header {
+  width: 100%;
+  height: 370px;
+  background: #435ad4;
+  box-shadow: 0px 2px 10px #555;
+}
+.profileContainer {
+  /* background: #444; */
+}
+.profileIcon  {
+  width: 250px;
+  height: 250px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  background: #eee;
+}
+.profileIcon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.profileName {
+  margin-top: 15px;
+  width: 100%;
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+}
+.profileTitle {
+  margin-top: 7px;
+  font-size: 17px;
+  color: #9aa9f8;
+}
+
+.profileDetails {
+  width: 100%;
+  background: #000;
+}
+.detailContainer {
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 50px;
+  background: #444;
+
+}
+.projects {
+  float: left;
+  width: 50%;
+  background: #eee;
+}
+.projects h1 {
+  font-size: 28px;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+.projects ul {
+  font-size: 18px;
+  margin-left: 30px;
+}
+.projects ul li {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+
+.skills {
+  float: right;
+  width: 50%;
+}
+.skillContainer  {
+  padding: 30px;
+  font-size: 15px;
+  margin-left: 60px;
+}
+.skill {
+  float: left;
+}
+.bar {
+  margin-left: 20px;
+  width: 100px;
+  height: 13px;
+  float: left;
+  background: #ddd;
+}
+.b05 {
+  width: 10%;
+  height: 100%;
+  float: left;
+  background: #435ad4;
+}
+.b10 {
+  width: 20%;
+  height: 100%;
+  float: left;
+  background: #435ad4;
+}
+.b15 {
+  width: 30%;
+  height: 100%;
+  float: left;
+  background: #435ad4;
+}
+.b20 {
+  width: 40%;
+  height: 100%;
+  float: left;
+  background: #435ad4;
+}
+.b25 {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: #435ad4;
+}
+.b30 {
+  width: 60%;
+  height: 100%;
+  float: left;
+  background: #435ad4;
+}
+.b35 {
+  width: 70%;
+  height: 100%;
+  float: left;
+  background: #435ad4;
+}
+.b40 {
+  width: 80%;
+  height: 100%;
+  float: left;
+  background: #435ad4;
+}
+.b45 {
+  width: 90%;
+  height: 100%;
+  float: left;
+  background: #435ad4;
+}
+.b50 {
+  width: 100%;
+  height: 100%;
+  float: left;
+  background: #435ad4;
+}
+.score {
+  float: left;
+  margin-left: 20px;
+}

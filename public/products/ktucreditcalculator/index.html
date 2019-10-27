@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Abhin Krishna">
     <meta name="description" content="KTU Credit Calculator is a simple tool that helps students under APJ Abdul Kalam Technological University (KTU) to find their credit score from semester 1 to semester 4">
-    <meta name="keywords" content="Kerala Technology University, Kerala Technological University, HARK Developers , KTU Credit Calculator , Credit , Calculate ,Kerala Technical University, ktu.edu.in, ktu, Kerala University , Harkians">
+    <meta name="keywords" content="KTU University, University Calculator, HARK Developers , KTU Credit Calculator , Credit , Calculate ,Kerala Technical University, ktu.edu.in, ktu, Kerala University , Harkians">
     <link rel="icon" type="image/ico" href="../../images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles/css/style.css">
     <link rel="stylesheet" type="text/css" href="../../styles/css/customStyles.css">
@@ -31,7 +31,7 @@
 </div>
 <div id="content">
     <div class="JavaError">
-      <div class="javaErr">  Something gone wrong, Please make sure JavaScript is enabled on your browser  </div>
+      <div class="javaErr">  Loading please wait... <br> (If you see this for more an 30 seconds something is wrong <br> please make sure JavaScript is enabled on your browser) </div>
     </div>
     <div class="showContent" hidden>
       <div class="contentSelector">
@@ -72,10 +72,11 @@
           <!-- Table 1 Starts -->
           <table border="0px">
               <tr>
-                  <th colspan="3"> <h3> S1 </h3> </th>
+                  <th width="20px"> <h3> S1 </h3> </th>
+                  <td><span class="fullpasscheck"> Check all <input type="checkbox" id="S1FullPass"> </span></td>
               </tr>
               <tr>
-                  <td>
+                  <td colspan="2">
                       <table border="2px" rules="all">
                           <tr>
                               <td id="SlNo"> <b>Sl No</b> </td>
@@ -128,7 +129,7 @@
                           <tr>
                               <td> </td>
                               <td style="text-align:left;"> Total Credits from S1  </td>
-                              <td> <div id="AccmltdMaxS1">  </div> </td>
+                              <td> <div class="AccmltdMaxS1">  </div> </td>
                               <td> <div id="AccmltdS1">  </div> </td>
                           </tr>
                       </table>
@@ -138,10 +139,11 @@
           <!-- Table 2 Starts -->
           <table border="0px">
               <tr>
-                  <th colspan="3"> <h3> S2 </h3> </th>
+                  <th width="20px"> <h3> S2 </h3> </th>
+                  <td><span class="fullpasscheck"> Check all <input type="checkbox" id="S2FullPass"> </span></td>
               </tr>
               <tr>
-                  <td>
+                  <td colspan="2">
                       <table border="2px" rules="all">
                           <tr>
                               <td id="SlNo"> <b>Sl No</b> </td>
@@ -200,7 +202,7 @@
                           <tr>
                               <td> </td>
                               <td style="text-align:left;"> Total Credits from S1-S2  </td>
-                              <td> <div id="AccmltdMaxS2">  </div> </td>
+                              <td> <div class="AccmltdMaxS2">  </div> </td>
                               <td> <div id="AccmltdS2">  </div> </td>
                           </tr>
                       </table>
@@ -210,10 +212,11 @@
           <!-- Table 3 Starts -->
           <table border="0px">
               <tr>
-                  <th colspan="3"> <h3> S3 </h3> </th>
+                  <th width="20px"> <h3> S3 </h3> </th>
+                  <td><span class="fullpasscheck"> Check all <input type="checkbox" id="S3FullPass"> </span></td>
               </tr>
               <tr>
-                  <td>
+                  <td colspan="2">
                       <table border="2px" rules="all">
                           <tr>
                               <td id="SlNo"> <b>Sl No</b> </td>
@@ -260,7 +263,7 @@
                           <tr>
                               <td> 7 </td>
                               <td style="text-align:left">  Labs + Workshops (Mostly 2 in S3)  </td>
-                              <td> 1 </td>
+                              <td> 1  </td>
                               <td> <select id="s3labcrdt"> <option value="0" selected> 0 </option>  <option value="1"> 1 </option> <option value="2"> 2 </option> <option value="3"> 3 </option> <option value="4"> 4 </option> </select> </td>
                           </tr>
                           <tr>
@@ -272,7 +275,7 @@
                           <tr>
                               <td> </td>
                               <td style="text-align:left;"> Total Credits from S1-S3  </td>
-                              <td> <div id="AccmltdMaxS3">  </div> </td>
+                              <td> <div class="AccmltdMaxS3">  </div> </td>
                               <td> <div id="AccmltdS3">  </div> </td>
                           </tr>
 
@@ -283,10 +286,11 @@
           <!-- Table 4 Starts -->
           <table border="0px">
               <tr>
-                  <th colspan="3"> <h3> S4 </h3> </th>
+                  <th width="20px"> <h3> S4 </h3> </th>
+                  <td><span class="fullpasscheck"> Check all <input type="checkbox" id="S4FullPass"> </span></td>
               </tr>
               <tr>
-                  <td>
+                  <td colspan="2">
                       <table border="2px" rules="all">
                           <tr>
                               <td id="SlNo"> <b>Sl No</b> </td>
@@ -345,34 +349,379 @@
                           <tr>
                               <td> </td>
                               <td style="text-align:left;"> Total Credits from S1-S4  </td>
-                              <td> <div id="AccmltdMaxS4">  </div> </td>
+                              <td> <div class="AccmltdMaxS4">  </div> </td>
                               <td> <div id="AccmltdS4">  </div> </td>
                           </tr>
                       </table>
                   </td>
               </tr>
           </table>
+          <!-- Table 5 Starts -->
+          <table border="0px">
+              <tr>
+                  <th width="20px"> <h3> S5 </h3> </th>
+                  <td><span class="fullpasscheck"> Check all <input type="checkbox" id="S5FullPass"> </span></td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                      <table border="2px" rules="all">
+                          <tr>
+                              <td id="SlNo"> <b>Sl No</b> </td>
+                              <td id="Subject"> <b>Subject</b> </td>
+                              <td id="Credit"> <b>Credit</b> </td>
+                              <td id="Passed"> <b>Passed</b> </td>
+                          </tr>
+                          <tr>
+                              <td> 1 </td>
+                              <td style="text-align:left">  <div id="S5A_Name"> </div> </td>
+                              <td> <div id="S5A_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S5A"> </td>
+                          </tr>
+                          <tr>
+                              <td> 2 </td>
+                              <td style="text-align:left">   <div id="S5B_Name"> </div>  </td>
+                              <td> <div id="S5B_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S5B"> </td>
+                          </tr>
+                          <tr>
+                              <td> 3 </td>
+                              <td style="text-align:left">    <div id="S5C_Name"> </div> </td>
+                              <td> <div id="S5C_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S5C"> </td>
+                          </tr>
+                          <tr>
+                              <td> 4 </td>
+                              <td style="text-align:left">   <div id="S5D_Name"> </div> </td>
+                              <td> <div id="S5D_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S5D"> </td>
+                          </tr>
+                          <tr>
+                              <td> 5 </td>
+                              <td style="text-align:left"> <div id="S5E_Name"> </div> </td>
+                              <td> <div id="S5E_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S5E"> </td>
+                          </tr>
+                          <tr>
+                              <td> 6 </td>
+                              <td style="text-align:left"> <div id="S5F_Name"> </div> </td>
+                              <td> <div id="S5F_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S5F"> </td>
+                          </tr>
+                          <tr>
+                              <td> 7 </td>
+                              <td style="text-align:left"> <div id="S5S_Name"> </div> </td>
+                              <td> <div id="S5S_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S5S"> </td>
+                          </tr>
+                          <tr>
+                              <td> 8 </td>
+                              <td style="text-align:left"> Labs (Mostly 2 in S5) </td>
+                              <td> <div id="S5A_Credit"> 1 </div></td>
+                              <td> <select id="s5labcrdt"> <option value="0" selected> 0 </option> <option value="1"> 1 </option> <option value="2"> 2 </option> <option value="3"> 3 </option> <option value="4"> 4 </option> </select> </td>
+                          </tr>
+                          <tr>
+                              <td> </td>
+                              <td style="text-align:left"> Total Credits in S5 Only</td>
+                              <td> <div id="S5MaxCredit"> </div> </td>
+                              <td> <div id="s5Total">  </div> </td>
+                          </tr>
+                          <tr>
+                              <td> </td>
+                              <td style="text-align:left;"> Total Credits from S1-S5  </td>
+                              <td> <div class="AccmltdMaxS5">  </div> </td>
+                              <td> <div id="AccmltdS5">  </div> </td>
+                          </tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+          <!-- Table 6 Starts -->
+          <table border="0px">
+              <tr>
+                  <th width="20px"> <h3> S6 </h3> </th>
+                  <td><span class="fullpasscheck"> Check all <input type="checkbox" id="S6FullPass"> </span></td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                      <table border="2px" rules="all">
+                          <tr>
+                              <td id="SlNo"> <b>Sl No</b> </td>
+                              <td id="Subject"> <b>Subject</b> </td>
+                              <td id="Credit"> <b>Credit</b> </td>
+                              <td id="Passed"> <b>Passed</b> </td>
+                          </tr>
+                          <tr>
+                              <td> 1 </td>
+                              <td style="text-align:left">  <div id="S6A_Name"> </div> </td>
+                              <td> <div id="S6A_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S6A"> </td>
+                          </tr>
+                          <tr>
+                              <td> 2 </td>
+                              <td style="text-align:left">   <div id="S6B_Name"> </div>  </td>
+                              <td> <div id="S6B_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S6B"> </td>
+                          </tr>
+                          <tr>
+                              <td> 3 </td>
+                              <td style="text-align:left">    <div id="S6C_Name"> </div> </td>
+                              <td> <div id="S6C_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S6C"> </td>
+                          </tr>
+                          <tr>
+                              <td> 4 </td>
+                              <td style="text-align:left">   <div id="S6D_Name"> </div> </td>
+                              <td> <div id="S6D_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S6D"> </td>
+                          </tr>
+                          <tr>
+                              <td> 5 </td>
+                              <td style="text-align:left"> <div id="S6E_Name"> </div> </td>
+                              <td> <div id="S6E_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S6E"> </td>
+                          </tr>
+                          <tr>
+                              <td> 6 </td>
+                              <td style="text-align:left"> <div id="S6F_Name"> </div> </td>
+                              <td> <div id="S6F_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S6F"> </td>
+                          </tr>
+                          <tr>
+                              <td> 7 </td>
+                              <td style="text-align:left"> <div id="S6U_Name"> </div> </td>
+                              <td> <div id="S6U_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S6U"> </td>
+                          </tr>
+                          <tr>
+                              <td> 8 </td>
+                              <td style="text-align:left"> Labs (Mostly 2 in S6) </td>
+                              <td> <div id="S6A_Credit"> 1 </div></td>
+                              <td> <select id="s6labcrdt"> <option value="0" selected> 0 </option> <option value="1"> 1 </option> <option value="2"> 2 </option> <option value="3"> 3 </option> <option value="4"> 4 </option> </select> </td>
+                          </tr>
+                          <tr>
+                              <td> </td>
+                              <td style="text-align:left"> Total Credits in S6 Only</td>
+                              <td> <div id="S6MaxCredit"> </div> </td>
+                              <td> <div id="s6Total">  </div> </td>
+                          </tr>
+                          <tr>
+                              <td> </td>
+                              <td style="text-align:left;"> Total Credits from S1-S6  </td>
+                              <td> <div class="AccmltdMaxS6">  </div> </td>
+                              <td> <div id="AccmltdS6">  </div> </td>
+                          </tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+          <!-- Table 7 Starts -->
+          <table border="0px">
+              <tr>
+                  <th width="20px"> <h3> S7 </h3> </th>
+                  <td><span class="fullpasscheck"> Check all <input type="checkbox" id="S7FullPass"> </span></td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                      <table border="2px" rules="all">
+                          <tr>
+                              <td id="SlNo"> <b>Sl No</b> </td>
+                              <td id="Subject"> <b>Subject</b> </td>
+                              <td id="Credit"> <b>Credit</b> </td>
+                              <td id="Passed"> <b>Passed</b> </td>
+                          </tr>
+                          <tr>
+                              <td> 1 </td>
+                              <td style="text-align:left">  <div id="S7A_Name"> </div> </td>
+                              <td> <div id="S7A_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S7A"> </td>
+                          </tr>
+                          <tr>
+                              <td> 2 </td>
+                              <td style="text-align:left">   <div id="S7B_Name"> </div>  </td>
+                              <td> <div id="S7B_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S7B"> </td>
+                          </tr>
+                          <tr>
+                              <td> 3 </td>
+                              <td style="text-align:left">    <div id="S7C_Name"> </div> </td>
+                              <td> <div id="S7C_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S7C"> </td>
+                          </tr>
+                          <tr>
+                              <td> 4 </td>
+                              <td style="text-align:left">   <div id="S7D_Name"> </div> </td>
+                              <td> <div id="S7D_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S7D"> </td>
+                          </tr>
+                          <tr>
+                              <td> 5 </td>
+                              <td style="text-align:left"> <div id="S7E_Name"> </div> </td>
+                              <td> <div id="S7E_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S7E"> </td>
+                          </tr>
+                          <tr>
+                              <td> 6 </td>
+                              <td style="text-align:left"> <div id="S7F_Name"> </div> </td>
+                              <td> <div id="S7F_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S7F"> </td>
+                          </tr>
+                          <tr>
+                              <td> 7 </td>
+                              <td style="text-align:left"> <div id="S7S_Name"> </div> </td>
+                              <td> <div id="S7S_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S7S"> </td>
+                          </tr>
+                          <tr>
+                              <td> 8 </td>
+                              <td style="text-align:left"> Lab (Mostly 1 in S7) </td>
+                              <td> <div id="S7A_Credit"> 1 </div></td>
+                              <td> <select id="s7labcrdt"> <option value="0" selected> 0 </option> <option value="1"> 1 </option> <option value="2"> 2 </option> <option value="3"> 3 </option> <option value="4"> 4 </option> </select> </td>
+                          </tr>
+                          <tr>
+                              <td> </td>
+                              <td style="text-align:left"> Total Credits in S7 Only</td>
+                              <td> <div id="S7MaxCredit"> </div> </td>
+                              <td> <div id="s7Total">  </div> </td>
+                          </tr>
+                          <tr>
+                              <td> </td>
+                              <td style="text-align:left;"> Total Credits from S1-S7  </td>
+                              <td> <div class="AccmltdMaxS7">  </div> </td>
+                              <td> <div id="AccmltdS7">  </div> </td>
+                          </tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+          <!-- Table 8 Starts -->
+          <table border="0px">
+              <tr>
+                  <th width="20px"> <h3> S8 </h3> </th>
+                  <td><span class="fullpasscheck"> Check all <input type="checkbox" id="S8FullPass"> </span></td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                      <table border="2px" rules="all">
+                          <tr>
+                              <td id="SlNo"> <b>Sl No</b> </td>
+                              <td id="Subject"> <b>Subject</b> </td>
+                              <td id="Credit"> <b>Credit</b> </td>
+                              <td id="Passed"> <b>Passed</b> </td>
+                          </tr>
+                          <tr>
+                              <td> 1 </td>
+                              <td style="text-align:left">  <div id="S8A_Name"> </div> </td>
+                              <td> <div id="S8A_Credit"> </div> </td>
+                              <td> <input type="checkbox" id="S8A"> </td>
+                          </tr>
+                          <tr>
+                              <td> 2 </td>
+                              <td style="text-align:left">   <div id="S8B_Name"> </div>  </td>
+                              <td> <div id="S8B_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S8B"> </td>
+                          </tr>
+                          <tr>
+                              <td> 3 </td>
+                              <td style="text-align:left">    <div id="S8C_Name"> </div> </td>
+                              <td> <div id="S8C_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S8C"> </td>
+                          </tr>
+                          <tr>
+                              <td> 4 </td>
+                              <td style="text-align:left">   <div id="S8D_Name"> </div> </td>
+                              <td> <div id="S8D_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S8D"> </td>
+                          </tr>
+                          <tr>
+                              <td> 5 </td>
+                              <td style="text-align:left"> <div id="S8E_Name"> </div> </td>
+                              <td> <div id="S8E_Credit"> </div></td>
+                              <td> <input type="checkbox" id="S8E"> </td>
+                          </tr>
+                          <tr>
+                              <td> </td>
+                              <td style="text-align:left"> Total Credits in S8 Only</td>
+                              <td> <div id="S8MaxCredit"> </div> </td>
+                              <td> <div id="s8Total">  </div> </td>
+                          </tr>
+                          <tr>
+                              <td> </td>
+                              <td style="text-align:left;"> Total Credits from S1-S8  </td>
+                              <td> <div class="AccmltdMaxS8">  </div> </td>
+                              <td> <div class="AccmltdS8">  </div> </td>
+                          </tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+
           <div class="CalcButton"> <button id="CalcBtn"> Calculate </button> </div>
           <div class="errorMsg" hidden> Please give input </div>
-        </div>
-            <div class="resultBox" hidden>
+      </div> <!-- end of  contentBox -->
+
+
+      <div class="resultBox" hidden>
         <table border="0px">
             <tr id="S1S2Result">
-                <td width="60%" style="text-align:right;"> Your Total Credits from S1 - S2 </td>
+                <td width="60%" style="text-align:right;"> Total Credits from S1 - S2 </td>
                 <td width="3%" style="text-align:center;"> : </td>
-                <td width="37%"  style="font-size:60;"> <div id="s1s2" class="green">  </div> </td>
+                <td width="37%"  style="font-size:60;"> <div class="s1s2" class="green">  </div> </td>
             </tr>
             <tr id="S1S4Result">
-                <td style="text-align:right;"> Your Total Credits from S1 - S4 </td>
+                <td style="text-align:right;"> Total Credits from S1 - S4 </td>
                 <td style="text-align:center;"> : </td>
-                <td style="font-size:60;"> <div id="s1s4" class="green">  </div> </td>
+                <td style="font-size:60;"> <div class="s1s4" class="green">  </div> </td>
             </tr>
+            <!-- <tr id="S1S6Result">
+                <td style="text-align:center;"> S1 - S6 : <span class="s1s6"></span> </td>
+                <td style="text-align:center;" colspan="2"> S1 - S8 : <span class="s1s6"></span> </td>
+            </tr> -->
+
+            <table border="1px" rules="all" style="text-align:center">
+              <tr>
+                <th></th>
+                <th> First Year  </th>
+                <th> Second Year </th>
+                <th> Third Year  </th>
+                <th> Fouth Year  </th>
+                <th>Total <span class=""></span> </th>
+              </tr>
+              <tr>
+                <th> Cum. Credits</th>
+                <td> <div class="s1s2"> </div> </td>
+                <td> <div class="s1s4"> </div> </td>
+                <td> <div class="s1s6"> </div> </td>
+                <td> <div class="s1s8"> </div> </td>
+                <td> <div class="s1s8">  </td>
+              </tr>
+              <tr>
+                <th>Passed Subs</th>
+                <td> <span class="TotpassdS1Subs"></span> + <span class="TotpassdS2Subs"></span> </td>
+                <td> <span class="TotpassdS3Subs"></span> + <span class="TotpassdS4Subs"></span> </td>
+                <td> <span class="TotpassdS5Subs"></span> + <span class="TotpassdS6Subs"></span> </td>
+                <td> <span class="TotpassdS7Subs"></span> + <span class="TotpassdS8Subs"></span> </td>
+                <td> <span class="TotpassdSubs"></span> / 50 </td>
+              </tr>
+              <tr>
+                <th>Failed Subs</th>
+                <td> <span class="TotfailedS1Subs"></span> + <span class="TotfailedS2Subs"></span> </td>
+                <td> <span class="TotfailedS3Subs"></span> + <span class="TotfailedS4Subs"></span> </td>
+                <td> <span class="TotfailedS5Subs"></span> + <span class="TotfailedS6Subs"></span> </td>
+                <td> <span class="TotfailedS7Subs"></span> + <span class="TotfailedS8Subs"></span> </td>
+                <td> <span class="TotfailedSubs"></span> / 50 </td>
+              </tr>
+            </table>
         </table>
-        <div id="ResultReview"> </div>
-            </div>
-          </div>
-        </div>
-        <div id="footer">
+      </div>
+
+      </div>
+    </div> <!-- end of contentBox -->
+
+
+
+
+
+    <div id="footer">
           <div class="container">
             <div class="row">
               <div class="halfWindow">
