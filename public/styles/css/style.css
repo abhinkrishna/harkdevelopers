@@ -3,6 +3,7 @@ body , html {
   padding: 0px;
   font-family: Raleway;
 }
+
 ::-webkit-scrollbar {
   width: 5px;
   background: trasnsparent;
@@ -119,6 +120,10 @@ body , html {
   background: url(../../images/svg/python.svg);
   background-position: center;
   background-size: contain;
+}
+
+.favorite_h1 {
+  color: #000;
 }
 
 .centerContent {

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.min.css">
+  <title> Getgrade | CGPA & Credit Calculation for KTU Students </title>
+</head>
+<body>
+
+  <header>
+    <logo> <i class="fab fa-accusoft"></i> Getgrade </logo>
+    <div class="buttons">
+      <button title="Login"> <i class="fas fa-user-circle "></i> </button>
+    </div>
+  </header>
+
+  <section class="dashboard_container">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="welcome_text">Hi <span id="fullName"></span></div>
+          <div class="welcome_address"> </div>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <div class="stats_box flex-center">
+            <table width="60%" class="">
+              <tr>
+                <td> 03 </td>
+                <td> Classes </td>
+                <td> <i class="fas fa-chalkboard-teacher"></i> </td>
+              </tr>
+              <tr>
+                <td> 04 </td>
+                <td> Subjects </td>
+                <td> <i class="fas fa-book"></i> </td>
+              </tr>
+              <tr>
+                <td> 40 </td>
+                <td> Students </td>
+                <td> <i class="fas fa-user-graduate"></i> </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="classes_section">
+    <div class="container">
+      <div class="options">
+        <div class="search">
+          <input type="text" name="" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-sm dropdown-toggle" type="button" id="add" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-plus"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#"> <i class="fas fa-plus fa-xs"></i> Class </a>
+            <a class="dropdown-item" href="#"> <i class="fas fa-plus fa-xs"></i> Student </a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion" id="Classes">
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+
+  </footer>
+
+  <!-- bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+  <script src="../scripts/dashboard.js"></script>
+</body>
+</html>
