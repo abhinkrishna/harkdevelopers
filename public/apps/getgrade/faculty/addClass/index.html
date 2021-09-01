@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/style.min.css">
+  <title> Student Profile </title>
+</head>
+<body>
+
+  <header>
+    <logo> <i class="fab fa-accusoft"></i> Getgrade </logo>
+    <div class="buttons">
+      <button title="Login"> <i class="fas fa-user-circle "></i> </button>
+    </div>
+  </header>
+
+
+  <section class="addClass_section">
+    <div class="my_location">
+      <nav aria-label="breadcrumb" class="imfaculty w-100">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../faculty">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Add Class</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="container m-t-5">
+      <div class="row">
+        <div class="col">
+          <h1> Add Class </h1>
+        </div>
+      </div>
+      <form id="addClass_form" method="post">
+        <div class="row">
+          <div class="col-sm-3 col-xs-5"> <h5> Class Name </h5> </div>
+          <div class="col-sm-6 col-xs-7">
+            <input type="text" id="className" class="form-control form-control-lg" placeholder="eg. S4_CSE">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 col-xs-5"> <h5> Batch </h5> </div>
+          <div class="col-sm-6 col-xs-7">
+            <select name="" class="custom-select custom-select-lg" id="batch_id" value="">
+              <option value=""> Pick one </option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 col-xs-5"> <h5> Department </h5> </div>
+          <div class="col-sm-6 col-xs-7">
+            <select name="" class="custom-select custom-select-lg" id="department_id" value="">
+              <option value="PickOne"> Pick one </option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 col-xs-5"> <h5> Semester </h5> </div>
+          <div class="col-sm-6 col-xs-7">
+            <select class="custom-select custom-select-lg" id="semester_id">
+              <option value="PickOne"> Pick one </option>
+            </select>
+          </div>
+        </div>
+        <div id="class_definition_container">
+          <div class="row">
+            <div class="col">
+              <div id="class_definition">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th colspan="4">S1</th>
+                    </tr>
+                    <tr>
+                      <th width="10%">Slot</th>
+                      <th width="60%">Course Name</th>
+                      <th width="15%">Course Code</th>
+                      <th width="15%">Credit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>B</td>
+                      <td>
+                        <select name="" id="S1_course_B" class="custom-select">
+                          <option value="select">Select</option>
+                          <option value="PH100">Engineering Physics</option>
+                          <option value="CY100">Engineering Chemistry</option>
+                        </select>
+                      </td>
+                      <td> <span id="S1_selected_B_course"></span> </td>
+                      <td> <span id="S1_selected_B_credit"></span> </td>
+                    </tr>
+                    <tr>
+                      <td>C</td>
+                      <td>
+                        <select name="" id="S1_course_C" class="custom-select">
+                          <option value="select">Select</option>
+                          <option value="BE100">Engineering Mechanics</option>
+                          <option value="BE110">Engineering Graphics</option>
+                        </select>
+                      </td>
+                      <td> <span id="S1_selected_C_course"> </span> </td>
+                      <td> <span id="S1_selected_C_credit"> </td>
+                    </tr>
+                    <tr>
+                      <td>D</td>
+                      <td>
+                        <select name="" id="S1_course_D" class="custom-select">
+                          <option value="select">Select</option>
+                          <option value="BE101-1">Introduction to Civil Engineering</option>
+                          <option value="BE101-2">Introduction to Mechanical Engineering</option>
+                          <option value="BE101-3">Introduction to Electrical Engineering</option>
+                          <option value="BE101-4">Introduction to Electronics Engineering</option>
+                          <option value="BE101-5">Introduction to Computing and Problem Solving</option>
+                          <option value="BE101-6">Introduction to Chemical Engineering</option>
+                          <option value="nill">Not listed</option>
+                        </select>
+                      </td>
+                      <td> <span id="S1_selected_D_course"> </span> </td>
+                      <td> <span id="S1_selected_D_credit"> </td>
+                    </tr>
+                    <tr>
+                      <td>F</td>
+                      <td>
+                        <select name="" id="S1_course_F" class="custom-select">
+                          <option value="select">Select</option>
+                          <option value="CE100">Basics of Civil Engineering</option>
+                          <option value="ME100">Basics of Mechanical Engineering</option>
+                          <option value="EE100">Basics of Electrical Engineering</option>
+                          <option value="EC100">Basics of Electronics Engineering</option>
+                          <option value="nill">Not listed</option>
+                        </select>
+                      </td>
+                      <td> <span id="S1_selected_F_course"> </span> </td>
+                      <td> <span id="S1_selected_F_credit"> </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th colspan="4">S2</th>
+                    </tr>
+                    <tr>
+                      <th width="10%">Slot</th>
+                      <th width="60%">Course Name</th>
+                      <th width="15%">Course Code</th>
+                      <th width="15%">Credit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>B</td>
+                      <td>
+                        <select name="" id="S2_course_B" class="custom-select">
+                          <option value="select">Select</option>
+                          <option value="PH100">Engineering Physics</option>
+                          <option value="CY100">Engineering Chemistry</option>
+                        </select>
+                      </td>
+                      <td> <span id="S2_selected_B_course"></span> </td>
+                      <td> <span id="S2_selected_B_credit"></span> </td>
+                    </tr>
+                    <tr>
+                      <td>C</td>
+                      <td>
+                        <select name="" id="S2_course_C" class="custom-select">
+                          <option value="select">Select</option>
+                          <option value="BE100">Engineering Mechanics</option>
+                          <option value="BE110">Engineering Graphics</option>
+                        </select>
+                      </td>
+                      <td> <span id="S2_selected_C_course"> </span> </td>
+                      <td> <span id="S2_selected_C_credit"> </td>
+                    </tr>
+                    <tr>
+                      <td>E</td>
+                      <td>
+                        <select name="" id="S2_course_E" class="custom-select">
+                          <option value="select">Select</option>
+                          <option value="CE100">Basics of Civil Engineering</option>
+                          <option value="ME100">Basics of Mechanical Engineering</option>
+                          <option value="EE100">Basics of Electrical Engineering</option>
+                          <option value="EC100">Basics of Electronics Engineering</option>
+                          <option value="nill">Not listed</option>
+                        </select>
+                      </td>
+                      <td> <span id="S2_selected_E_course"> </span> </td>
+                      <td> <span id="S2_selected_E_credit"> </td>
+                    </tr>
+                    <tr>
+                      <td>F</td>
+                      <td>
+                        <select name="" id="S2_course_F" class="custom-select">
+                          <option value="select">Select</option>
+                          <option value="CE100">Basics of Civil Engineering</option>
+                          <option value="ME100">Basics of Mechanical</option>
+                          <option value="EE100">Basics of Electrical</option>
+                          <option value="EC100">Basics of Electronics</option>
+                          <option value="CS100">Computer Programming</option>
+                          <option value="nill">Not listed</option>
+                        </select>
+                      </td>
+                      <td> <span id="S2_selected_F_course"> </span> </td>
+                      <td> <span id="S2_selected_F_credit"> </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th colspan="4">S3</th>
+                    </tr>
+                    <tr>
+                      <th width="10%">Slot</th>
+                      <th width="60%">Course Name</th>
+                      <th width="15%">Course Code</th>
+                      <th width="15%">Credit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>F</td>
+                      <td>
+                        <select name="" id="S3_course_F" class="custom-select">
+                          <option value="select">Select</option>
+                          <option value="HS210">Life Skill</option>
+                          <option value="HS200">Business Economics</option>
+                        </select>
+                      </td>
+                      <td> <span id="S3_selected_F_course"> </span> </td>
+                      <td> <span id="S3_selected_F_credit"> </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th colspan="4">S4</th>
+                    </tr>
+                    <tr>
+                      <th width="10%">Slot</th>
+                      <th width="60%">Course Name</th>
+                      <th width="15%">Course Code</th>
+                      <th width="15%">Credit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>F</td>
+                      <td>
+                        <select name="" id="S4_course_F" class="custom-select">
+                          <option value="select">Select</option>
+                          <option value="HS210">Life Skill</option>
+                          <option value="HS200">Business Economics</option>
+                        </select>
+                      </td>
+                      <td> <span id="S4_selected_F_course"> </span> </td>
+                      <td> <span id="S4_selected_F_credit"> </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </section>
+
+  <footer></footer>
+
+  <button class="float_button flex-center" onclick="window.location.href = 'edit/';"> <i class="fas fa-edit"></i> </button>
+
+  <!-- bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <!-- App -->
+  <script src="../../scripts/app.js"></script>
+  <script>
+    // AOS.init();
+    $(document).ready(function() {
+      // Genarating batch years
+      let start_year = 2016;
+      let current_year = new Date().getFullYear();
+      for (var i = current_year-start_year; i >= 0 ; i--) {
+        $('#batch_id').append(`
+            <option value='`+i+`'> `+ (start_year+i) +'-'+ (start_year+4+i) +` </option>
+          `);
+      }
+
+      // Getting courses from courses.json
+      $.getJSON("../../db/courses.json",function(data) {
+        $.each(data, function(key,value) {
+          $('#department_id').append(`
+            <option value="`+value.id+`"> `+value.course+` </option>
+          `);
+        });
+      });
+
+      // Set semesters
+      for (let i = 1; i <= 8; i++) {
+        $('#semester_id').append(`
+          <option value="S`+i+`">S`+i+`</option>
+        `);
+      }
+
+      // Realtime space remover. Replaces whitespace with underscore ( ' ' -> '_' )
+      $('#className').keyup(function() {
+        let val = $('#className').val();
+        let filtered = '';
+        for (var i = 0; i < val.length; i++) {
+          if(val[i] == ' ') {
+            filtered += '_';
+          } else {
+            filtered += val[i]
+          }
+        }
+        $('#className').val(filtered);
+      });
+
+
+
+      $('#S1_course_B').change(function() {
+        let S1_course_B = $("#S1_course_B option:selected").val();
+        let credit = 4;
+        if (S1_course_B == 'PH100') {
+          $('#S1_selected_B_course').html('PH100');
+          $('#S2_course_B').val('CY100').change();
+        } else {
+          $('#S1_selected_B_course').html('CY100');
+          $('#S2_course_B').val('PH100').change();
+        }
+        $('#S1_selected_B_credit').html(credit);
+        if(S1_course_B == 'nill' || S1_course_B == 'select') {$('#S1_selected_B_course').html(' ');$('#S1_selected_B_credit').html(' ');}
+      });
+      $('#S1_course_C').change(function() {
+        let S1_course_C = $("#S1_course_C option:selected").val();
+        let credit = {"BE100":4,"BE110":3};
+        $('#S1_selected_C_course').html(S1_course_C);
+        if (S1_course_C == "BE100") {
+          $('#S1_selected_C_credit').html(credit['BE100']);
+          $('#S2_course_C').val('BE110').change();
+        } else if (S1_course_C == 'BE110') {
+          $('#S1_selected_C_credit').html(credit['BE110']);
+          $('#S2_course_C').val('BE100').change();
+        }
+        if(S1_course_C == 'nill' || S1_course_C == 'select') {$('#S1_selected_C_course').html(' ');$('#S1_selected_C_credit').html(' ');}
+      });
+      $('#S1_course_D').change(function() {
+        let S1_course_D = $("#S1_course_D option:selected").val();
+        let credit = 3;
+        $('#S1_selected_D_course').html(S1_course_D);
+        $('#S1_selected_D_credit').html(credit);
+        if(S1_course_D == 'nill' || S1_course_D == 'select') {$('#S1_selected_D_course').html(' ');$('#S1_selected_D_credit').html(' ');}
+      });
+      $('#S1_course_F').change(function() {
+        let S1_course_F = $("#S1_course_F option:selected").val();
+        let credit = 3;
+        $('#S1_selected_F_course').html(S1_course_F);
+        $('#S1_selected_F_credit').html(credit);
+        if(S1_course_F == 'nill' || S1_course_F == 'select') {$('#S1_selected_F_course').html(' ');$('#S1_selected_F_credit').html(' ');}
+      });
+
+      $('#S2_course_B').change(function() {
+        let S2_course_B = $("#S2_course_B option:selected").val();
+        let credit = 4;
+        $('#S2_selected_B_course').html(S2_course_B);
+        $('#S2_selected_B_credit').html(credit);
+        if(S2_course_B == 'nill' || S2_course_B == 'select') {$('#S2_selected_B_course').html(' ');$('#S2_selected_B_credit').html(' ');}
+      });
+      $('#S2_course_C').change(function() {
+        let S2_course_C = $("#S2_course_C option:selected").val();
+        let credit = {"BE100":4,"BE110":3};
+        $('#S2_selected_C_course').html(S2_course_C);
+        if (S2_course_C == "BE100") {
+          $('#S2_selected_C_credit').html(credit['BE100']);
+        } else if (S2_course_C == 'BE110') {
+          $('#S2_selected_C_credit').html(credit['BE110']);
+        }
+        if(S2_course_C == 'nill' || S2_course_C == 'select') {$('#S2_selected_C_course').html(' ');$('#S2_selected_C_credit').html(' ');}
+      });
+      $('#S2_course_E').change(function() {
+        let S2_course_E = $("#S2_course_E option:selected").val();
+        let credit = 3;
+        $('#S2_selected_E_course').html(S2_course_E);
+        $('#S2_selected_E_credit').html(credit);
+        if(S2_course_E == 'nill' || S2_course_E == 'select') {$('#S2_selected_E_course').html(' ');$('#S2_selected_E_credit').html(' ');}
+      });
+      $('#S2_course_F').change(function() {
+        let S2_course_F = $("#S2_course_F option:selected").val();
+        let credit = 3;
+        $('#S2_selected_F_course').html(S2_course_F);
+        $('#S2_selected_F_credit').html(credit);
+        if(S2_course_F == 'nill' || S2_course_F == 'select') {$('#S2_selected_F_course').html(' ');$('#S2_selected_F_credit').html(' ');}
+      });
+
+      $('#S3_course_F').change(function() {
+        let S3_course_F = $("#S3_course_F option:selected").val();
+        let credit = 3;
+        if (S3_course_F == 'HS210') {
+          $('#S3_selected_F_course').html('HS210');
+          $('#S4_course_F').val('HS200').change();
+        } else if(S3_course_F == 'HS200') {
+          $('#S3_selected_F_course').html('HS200');
+          $('#S4_course_F').val('HS210').change();
+        }
+        $('#S3_selected_F_credit').html(credit);
+        if(S3_course_F == 'nill' || S3_course_F == 'select') {$('#S3_selected_F_course').html(' ');$('#S3_selected_F_credit').html(' ');}
+      });
+
+      $('#S4_course_F').change(function() {
+        let S4_course_F = $("#S4_course_F option:selected").val();
+        let credit = 3;
+        if (S4_course_F == 'HS210') {
+          $('#S4_selected_F_course').html('HS210');
+          $('#S3_course_F').val('HS200').change();
+        } else if(S4_course_F == 'HS200') {
+          $('#S4_selected_F_course').html('HS200');
+          $('#S3_course_F').val('HS210').change();
+        }
+        $('#S4_selected_F_credit').html(credit);
+        if(S4_course_F == 'nill' || S4_course_F == 'select') {$('#S4_selected_F_course').html(' ');$('#S4_selected_F_credit').html(' ');}
+      });
+
+
+
+
+
+
+      $('#department_id').change(function() {define_class_courses();});
+      $('#semester_id').change(function() {define_class_courses();});
+      function define_class_courses() {
+        let dept = $("#department_id option:selected").text();
+        let sem = $("#semester_id option:selected").text();
+      }
+
+
+    // End of jQuery
+    });
+  </script>
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+</body>
+</html>

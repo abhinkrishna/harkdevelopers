@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/style.min.css">
+  <title> Student Edit </title>
+</head>
+<body>
+
+  <header>
+    <logo> <i class="fab fa-accusoft"></i> Getgrade </logo>
+    <div class="buttons">
+      <button title="Login"> <i class="fas fa-user-circle "></i> </button>
+    </div>
+  </header>
+
+  <section class="student_section">
+    <div class="my_location">
+      <nav aria-label="breadcrumb" class="imfaculty w-100">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../faculty">Home</a></li>
+          <li class="breadcrumb-item"><a href="../../student">Student</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Edit</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+          <div class="row">
+            <div class="col"> <input id="studentName_id" value="Abhin Krishna K A" placeholder="Student Name" class="studentName"> </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <select id="batch_id" class="batch">
+              </select>
+            </div>
+            <div class="col">
+              <select class="dept" id="dept_id" name="">
+                <option value="select"> dept </option>
+                <option value="CSE" selected> CSE </option>
+                <option value="ECE"> ECE </option>
+                <option value="EEE"> EEE </option>
+                <option value="BTE"> BTE </option>
+                <option value="ME"> ME </option>
+                <option value="CE"> CE </option>
+                <option value="IT"> IT </option>
+                <option value="other"> Other </option>
+              </select>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col"> <i class="fas fa-phone"></i> <input id="phone_id" value="+91 81139-87975" placeholder="Phone Number" class="phone"> </div>
+          </div>
+          <div class="row">
+            <div class="col"> <i class="fas fa-envelope"></i> <input id="email_id" value="abhinkrishna.ka@gmail.com" placeholder="Email address" class="email"> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <div class="additional_details">
+            <div class="row">
+              <div class="col text-center">
+                <select class="sem" name="semester">
+                  <option value="other"></option>
+                  <option value="S1">S1</option>
+                  <option value="S2">S2</option>
+                  <option value="S3">S3</option>
+                  <option value="S4">S4</option>
+                  <option value="S5">S5</option>
+                  <option value="S6">S6</option>
+                  <option value="S7">S7</option>
+                  <option value="S8" selected>S8</option>
+                </select>
+              </div>
+            </div>
+            <div class="row score_style">
+              <div class="col"> Credit : <span class="credit"> 56 </span> </div>
+              <div class="col"> CGPA : <span class="cgpa"> 4.50 </span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="studentmark_section">
+    <div class="container">
+      <div class="semesters">
+        <ul class="sems_head_ul">
+          <li class="sems_head" id="sems_head_s1"> <h4> S1 </h4> <div class="sems_content" id="sems_content_s1"> <div class="spinner-border text-info" role="status"><span class="sr-only"> </span> </div> </div> </li>
+          <li class="sems_head" id="sems_head_s2"> <h4> S2 </h4> <div class="sems_content" id="sems_content_s2"> <div class="spinner-border text-info" role="status"><span class="sr-only"> </span> </div> </div> </li>
+          <li class="sems_head" id="sems_head_s3"> <h4> S3 </h4> <div class="sems_content" id="sems_content_s3"> <div class="spinner-border text-info" role="status"><span class="sr-only"> </span> </div> </div> </li>
+          <li class="sems_head" id="sems_head_s4"> <h4> S4 </h4> <div class="sems_content" id="sems_content_s4"> <div class="spinner-border text-info" role="status"><span class="sr-only"> </span> </div> </div> </li>
+          <li class="sems_head" id="sems_head_s5"> <h4> S5 </h4> <div class="sems_content" id="sems_content_s5"> <div class="spinner-border text-info" role="status"><span class="sr-only"> </span> </div> </div> </li>
+          <li class="sems_head" id="sems_head_s6"> <h4> S6 </h4> <div class="sems_content" id="sems_content_s6"> <div class="spinner-border text-info" role="status"><span class="sr-only"> </span> </div> </div> </li>
+          <li class="sems_head" id="sems_head_s7"> <h4> S7 </h4> <div class="sems_content" id="sems_content_s7"> <div class="spinner-border text-info" role="status"><span class="sr-only"> </span> </div> </div> </li>
+          <li class="sems_head" id="sems_head_s8"> <h4> S8 </h4> <div class="sems_content" id="sems_content_s8"> <div class="spinner-border text-info" role="status"><span class="sr-only"> </span> </div> </div> </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+
+  </footer>
+
+  <button class="float_button flex-center"  data-toggle="modal" data-target="#saveChanges"> <i class="fas fa-save"></i> </button>
+  <!-- Modal -->
+  <div class="modal fade" id="saveChanges" tabindex="-1" role="dialog" aria-labelledby="saveChangesLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="saveChangesLabel"> Confirm </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Are you sure about the change? This cannot be undone.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
+          <button type="button" onclick="save()" class="btn btn-primary"> Confirm </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    // Genarate batch years
+    let start_year = 2016;
+    let current_year = new Date().getFullYear();
+    for (var i = current_year-start_year; i >= 0 ; i--) {
+      $('#batch_id').append(`
+          <option value='`+i+`'> `+ (start_year+i) +'-'+ (start_year+4+i) +` </option>
+        `);
+    }
+    function save() {
+      console.log('saved');
+    }
+  </script>
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+  <script src="../../scripts/student_show_page.js"></script>
+</body>
+</html>

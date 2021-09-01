@@ -45,7 +45,7 @@ $(document).ready(function () {
           <td>`+ current_class +`</td>
           <td>3</td>
           <td>4</td>
-          <td> <button class="btn btn-sm" onclick="alert('hi')"> Edit </button> </td>
+          <td> <button class="btn btn-sm btn-dark" onclick="window.location.href = '../student/';"> View </button> </td>
         </tr>
       </tbody>
     </table>

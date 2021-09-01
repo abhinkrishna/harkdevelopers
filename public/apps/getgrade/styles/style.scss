@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto|Lobster&display=swap');
 $bgColor : #fff;
 $primaryColor : #264348;
 $primaryBg : #fff;
@@ -37,6 +37,7 @@ a {
 header {
   width: 100%;
   height: 60px;
+  font-family: 'Roboto';
   background: $primaryBg;
   color: $primaryColor;
   border-bottom: 1px solid #eee;
@@ -52,7 +53,7 @@ header {
   .buttons {
     height: 60px;
     margin-right: 20px;
-    font-size: 16px;
+    font-size: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,6 +67,14 @@ header {
     border-radius: 10px;
     padding: 10px 15px 10px 15px;
   }
+  nav {
+    float: left;
+    width: 100%;
+  }
+}
+
+.landing_page {
+  font-family: 'Montserrat';
 }
 
 .landingSection {
@@ -74,6 +83,7 @@ header {
   padding-top: 260px;
   float: left;
   color: $primaryColor;
+  font-family: 'Roboto';
   background: url(../images/bg/bottom_layer.png);
   background-position: center;
   background-size: cover;
@@ -95,11 +105,81 @@ header {
     opacity: 0.7;
     font-size: 14px;
     line-height: 28px;
-    margin-left: 20px;
+    margin-right: 20px;
     button {
       line-height: 0px;
       padding:7px 10px 7px 10px;
     }
+  }
+}
+
+.newsletter {
+  width: 100%;
+  height: 300px;
+  background: #2c3e50;
+  margin-top: -1px;
+  float: left;
+  font-size: 15px;
+  font-family: 'Montserrat';
+  .row {
+    width: 70%;
+  }
+  input[type=text] {
+    width: 100%;
+    padding: 15px;
+    border: 0px;
+    border-radius: 7px;
+  }
+  button {
+    width: 100%;
+    padding: 15px;
+    background: #2980b9;
+  }
+}
+
+.about {
+  width: 100%;
+  float: left;
+  padding: 50px 0px 50px 0px;
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  p {
+    margin-top: 20px;
+    font-size: 17px;
+    text-align: justify;
+  }
+}
+
+.opinions {
+  width: 100%;
+  float: left;
+  padding-bottom: 100px;
+  background: #dfe6e9 ;
+  // background: url('../images/bg/opinion.png');
+  .row {
+    margin-top: 20px;
+  }
+  h1 {
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    text-align: center;
+  }
+  p {
+    padding: 0px 0px 30px 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lobster';
+    // font-family: 'Montserrat';
+  }
+  .opinion_by_style {
+    width: 100%;
+    margin-left: 300px;
+    font-family: 'Roboto';
+    font-size: 30px;
+    text-align: center;
   }
 }
 
@@ -124,17 +204,28 @@ header {
 }
 
 footer {
-  margin-top: 50px;
   float: left;
   width: 100%;
   height: 200px;
   background: #111;
 }
 
-// landing page ends
-// dashboard page starts
+.float_button {
+  float: left;
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 50%;
+  background: #444;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
 
-.dashboard_container {
+// landing page ends
+// faculty page starts
+
+.faculty_container {
   float: left;
   margin-top: 60px;
   padding-top: 50px;
@@ -149,6 +240,7 @@ footer {
     font-size: 13px;
   }
   .stats_box {
+    float: right;
     width: 20rem;
     height: 7rem;
     border-radius: 7px;
@@ -161,6 +253,7 @@ footer {
 .classes_section {
   width: 100%;
   float: left;
+  margin-bottom: 50px;
   .options {
     float: left;
     width: 100%;
@@ -174,7 +267,7 @@ footer {
         border-radius: 5px;
         font-size: 14px;
         padding: 7px;
-        width: 300px;
+        width: 250px;
       }
     }
     button {
@@ -187,13 +280,23 @@ footer {
   }
 }
 
+.my_location {
+  width: 100%;
+  float: left;
+  position: absolute;
+  top:60px;
+}
+
 .student_section {
   float: left;
   margin-top: 100px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   width: 100%;
   font-family: 'Montserrat';
   font-size: 14px;
+  input {
+    width: 100%;
+  }
   .row  {
     margin-top: 10px;
   }
@@ -221,6 +324,7 @@ footer {
 .studentmark_section {
   width: 100%;
   float: left;
+  margin-bottom: 50px;
   .semesters {
     width: 100%;
     // background: #aaa;
@@ -247,5 +351,71 @@ footer {
   }
 }
 
+.login_page, .register_page {
+  float: left;
+  width: 100%;
+  padding: 50px 0px 50px 0px;
+  margin-top: 60px;
+  .auth_container {
+    width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 20px;
+    margin: 0px auto;
+  }
+  h1 {
+    color: $primaryColor;
+  }
+  .row {
+    margin-top: 20px;
+  }
+  input {
+    font-size: 16px;
+    padding: 20px;
+  }
+  select {
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+    padding-left: 20px;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    background: $primaryColor;
+    color: $primaryBg;
+    &:hover {
+      color: $primaryBg;
+      box-shadow: 0px 0px 5px $primaryColor;
+    }
+  }
+  .select2-container--bootstrap .select2-selection {
+    padding: 10px;
+  }
+}
+
+  // AddClass Page
+.addClass_section {
+  float: left;
+  width: 100%;
+  margin-top: 120px;
+  margin-bottom: 50px;
+  .row  {
+    margin-top: 30px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
 @import 'darkmode';
-@import 'mobile';
+@import '_mobile';

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charest="utf-8" />
+    <title>Hello world!</title>
+  </head>
+  <body>
+    <center>
+      <h1>User List</h1>
+      <ul>
+        {{#each users}}
+        <li>Name: {{this.name}}</li>
+        <li>Age: {{this.age}}</li>
+        <br />
+        {{/each}}
+      </ul>
+    </center>
+  </body>
+</html>

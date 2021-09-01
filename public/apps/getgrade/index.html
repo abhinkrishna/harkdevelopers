@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/style.min.css">
+  <link rel="stylesheet" href="styles/style.min.css">
   <title> Getgrade </title>
 </head>
-<body>
+<body class="landing_page">
 
   <header>
     <logo> <i class="fab fa-accusoft"></i> Getgrade </logo>
@@ -32,14 +32,86 @@
           <i class="fas fa-user"></i> Update
         </li>
         <li>
-          <button type="button" name="button" class="button"><i class="fas fa-sign-in-alt"></i> Login </button>
+          <button type="button" name="button" class="button" onclick="window.location.href = 'login/';" ><i class="fas fa-sign-in-alt"></i> Login </button>
         </li>
       </ul>
     </div>
     <div class="downArrow"> <i class="fas fa-chevron-down"></i> </div>
   </section>
 
-  <section class="">
+  <section class="newsletter flex-center">
+    <div class="row">
+      <div class="col-sm-8 col-xs-12">
+        <input type="text" name="" placeholder="example@mail.com">
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <button> Get updates </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+          <img src="images/calculator.gif">
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <div>
+            <h1>About Us</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="opinions">
+
+    <div class="container flex-center">
+      <div class="row">
+        <h1> <img src="images/icons/opinion.svg" width="200px" alt=""> </h1>
+        <div id="carouselOpinion" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div>
+                <p id="opinion_text">
+                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                </p>
+                <p id="opinion_by" class="opinion_by_style"> - Harkian </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <p id="opinion_text">
+                  "2Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                </p>
+                <p id="opinion_by" class="opinion_by_style"> - Harkian II</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <p id="opinion_text">
+                  "3Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                </p>
+                <p id="opinion_by" class="opinion_by_style"> - Harkian III</p>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselOpinion" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselOpinion" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
   </section>
 
@@ -52,12 +124,22 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+  <!-- One Signal -->
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <!-- App -->
+  <script src="scripts/app.js"> </script>
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+      OneSignal.init({
+        appId: "ed3d34cd-4b00-4466-99f6-67ef627c418e",
+      });
+    });
   </script>
-  <!-- Font Awesome -->
-  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 </body>
 </html>

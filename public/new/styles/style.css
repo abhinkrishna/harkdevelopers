@@ -1,0 +1,87 @@
+a {
+    text-decoration: none;
+    color: #EC6880;
+}
+a:hover {
+    text-decoration: none;
+    color: #fa5775;
+}
+
+
+.title::before {
+    content: '';
+    width: 50px;
+    height: 1px;
+    margin-bottom: 1px;
+    display: inline-flex;
+    background-color: #EC6880;
+}
+
+header {
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+}
+
+.title::after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    margin-bottom: 1px;
+    display: inline-flex;
+    background-color: #EC6880;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: #EC6880;
+    border: 0px;
+    border-radius: 4px;
+    padding: 7.5px 30px;
+}
+
+.bg-primary {
+    background-color: #EC6880 !important;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-primary{
+    color: #EC6880 !important;
+
+}
+
+#services img {
+    height: 250px;
+}
+#services .card {
+    min-height: 420px;
+}
+#services ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#portfolio img {
+    height: 250px;
+}
+
+#team .card-title {
+    height: 25px;
+    overflow: hidden;
+}
+
+footer {
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #EC6880;
+    text-decoration: none;
+}

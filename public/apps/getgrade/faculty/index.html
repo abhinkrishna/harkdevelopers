@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="../styles/style.min.css">
-  <title> Getgrade | CGPA & Credit Calculation for KTU Students </title>
+  <title> Faculty </title>
 </head>
 <body>
 
@@ -18,14 +18,14 @@
     </div>
   </header>
 
-  <section class="dashboard_container">
+  <section class="faculty_container">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-sm-6 col-xs-12">
           <div class="welcome_text">Hi <span id="fullName"></span></div>
           <div class="welcome_address"> </div>
         </div>
-        <div class="col d-flex justify-content-end">
+        <div class="col-sm-6 col-xs-12">
           <div class="stats_box flex-center">
             <table width="60%" class="">
               <tr>
@@ -62,8 +62,8 @@
             <i class="fas fa-user-plus"></i>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#"> <i class="fas fa-plus fa-xs"></i> Class </a>
-            <a class="dropdown-item" href="#"> <i class="fas fa-plus fa-xs"></i> Student </a>
+            <a class="dropdown-item" href="addClass/"> <i class="fas fa-plus fa-xs"></i> Class </a>
+            <a class="dropdown-item" href="addStudent/"> <i class="fas fa-plus fa-xs"></i> Student </a>
           </div>
         </div>
       </div>
@@ -77,8 +77,11 @@
 
   </footer>
 
+  <button class="float_button flex-center"> <i class="fas fa-plus"></i> </button>
+
+
   <!-- bootstrap -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <!-- AOS -->
@@ -88,6 +91,6 @@
   </script>
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
-  <script src="../scripts/dashboard.js"></script>
+  <script src="../scripts/faculty.js"></script>
 </body>
 </html>
